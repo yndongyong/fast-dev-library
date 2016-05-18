@@ -1,0 +1,1 @@
+include ':fastdev-library', ':myapplication'

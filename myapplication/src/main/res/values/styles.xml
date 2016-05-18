@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Base">
+    </style>
+
+    <style name="AppTheme.Default">
+        <!--控件诶选中时的效果颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--主要的字体颜色-->
+        <item name="android:textColorPrimary">@color/text_black</item>
+        <!--主要字体的选中颜色-->
+        <item name="android:textColorPrimaryInverse">@color/text_gray</item>
+
+    </style>
+    <style name="AppTheme.Default.Start">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+</resources>

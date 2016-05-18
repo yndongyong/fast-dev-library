@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="medium_text">18sp</dimen>
+    <dimen name="micro_text">12sp</dimen>
+
+    <dimen name="circular_progress_border">4dp</dimen>
+    <dimen name="common_load_more_padding">20dp</dimen>
+    <dimen name="common_load_more_progress_size">30dp</dimen>
+    <dimen name="common_loading_progress_size">35dp</dimen>
+    <dimen name="common_loading_text_lines_spacing">5dp</dimen>
+    <dimen name="common_loading_text_margin">10dp</dimen>
+</resources>
