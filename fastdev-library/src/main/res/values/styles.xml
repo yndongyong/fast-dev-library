@@ -6,12 +6,11 @@
         <item name="android:windowActionBar">false</item>
         <!-- 使用 API Level 22 编译的话，要拿掉前綴字 -->
         <item name="android:windowNoTitle">true</item>
-        <!--  为了支持 沉浸式statusbar-->
+        <!--  为了支持 使用向右滑动返回的-->
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@android:color/transparent</item>
         <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
-        <!-- 不开启这个会导致view的内容跑到status下面去-->
-        <item name="android:fitsSystemWindows">true</item>
+        
 
     </style>
     <style name="Base.ImagesDetail">

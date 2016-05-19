@@ -15,10 +15,12 @@
         <item name="android:textColorPrimary">@color/text_black</item>
         <!--主要字体的选中颜色-->
         <item name="android:textColorPrimaryInverse">@color/text_gray</item>
+        <!-- 不开启这个会导致view的内容跑到status下面去-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
 
     </style>
     <style name="AppTheme.Default.Start">
         <item name="android:windowIsTranslucent">false</item>
     </style>
-
+    
 </resources>

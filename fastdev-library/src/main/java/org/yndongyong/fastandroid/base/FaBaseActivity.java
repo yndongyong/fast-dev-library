@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -61,13 +62,6 @@ public abstract class FaBaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         d("onCreate()");
         if (this.toggleOverridePendingTransition()) {
-//                    LEFT,//0
-//                    RIGHT,//1
-//                    TOP,//2
-//                    BOTTOM,//3
-//                    SCALE,//4
-//                    FADE,//5
-//                    DEFAULT;//6
             switch (TransitionMode.values()[this.getOverridePendingTransitionMode().ordinal()]) {
                 case LEFT:
                     this.overridePendingTransition(R.anim.left_in, R.anim.left_out);
@@ -252,27 +246,28 @@ public abstract class FaBaseActivity extends AppCompatActivity {
      *
      * @param on
      */
-    @TargetApi(19)
     protected void setTranslucentStatus(boolean on) {
-        Window win = getWindow();
-        WindowManager.LayoutParams winParams = win.getAttributes();
-        final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
-        if (on) {
-            winParams.flags |= bits;
-        } else {
-            winParams.flags &= ~bits;
+        if (Build.VERSION.SDK_INT >= 19) {
+            Window win = getWindow();
+            WindowManager.LayoutParams winParams = win.getAttributes();
+            final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+            if (on) {
+                winParams.flags |= bits;
+            } else {
+                winParams.flags &= ~bits;
+            }
+            win.setAttributes(winParams);
+        if (this.mToolbar != null)
+            this.mToolbar.setPadding(0, (int)AbViewUtil.dip2px(this, 22.0F), 0, 0);
+            
         }
-        win.setAttributes(winParams);
-        
-      /*  if (this.mToolbar != null)
-            this.mToolbar.setPadding(0, (int)AbViewUtil.dip2px(this, 20.0F), 0, 0);*/
-
     }
 
     /**
      * 设置 4.4 沉浸式状态栏
      */
     protected void setStatusbarByColorPrimaryDark() {
+        d(" setStatusbarByColorPrimaryDark()");
         SystemBarTintManager mTintManager = new SystemBarTintManager(this);
         mTintManager.setStatusBarTintEnabled(true);
         mTintManager.setStatusBarTintColor(R.color.default_main_color);//通知栏所需颜色
@@ -280,9 +275,9 @@ public abstract class FaBaseActivity extends AppCompatActivity {
 
     protected void setStatusBarColor(int color) {
         SystemBarTintManager mTintManager = new SystemBarTintManager(this);
-        mTintManager.setStatusBarTintEnabled(true);
         int statusBarColor = this.mContext.getResources().getColor(color);
         mTintManager.setStatusBarTintColor(statusBarColor);
+        mTintManager.setStatusBarTintEnabled(true);
     }
 
     public void showSnackBar(View topView, String msg) {

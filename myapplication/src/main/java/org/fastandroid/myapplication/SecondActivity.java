@@ -1,9 +1,14 @@
 package org.fastandroid.myapplication;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.WindowManager;
+
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import org.yndongyong.fastandroid.base.FaBaseSwipeBackActivity;
 
@@ -16,15 +21,13 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
         return R.layout.activity_second;
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mTransitionMode = TransitionMode.RIGHT;
         super.onCreate(savedInstanceState);
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);//向上导航,会导致parentactivity销毁，重新创建
+        setTitle("第二页");
     }
 
-    
-    
+
 }

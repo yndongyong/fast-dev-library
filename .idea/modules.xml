@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fast-dev-library.iml" filepath="$PROJECT_DIR$/fast-dev-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastdev-library/fastdev-library.iml" filepath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
     </modules>
   </component>
 </project>

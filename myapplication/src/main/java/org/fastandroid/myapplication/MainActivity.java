@@ -38,8 +38,9 @@ public class MainActivity extends FaBaseActivity {
         super.onCreate(savedInstanceState);
         d("onCreate()");
 //        mToolbar.setNavigationIcon(R.mipmap.ic_launcher);
-        setTitle("机关工会兴趣小组");
+        setTitle("沉浸式状态栏");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        setDisplayHomeAsUpDisEnabled();
     }
 
     @Override
@@ -161,7 +162,7 @@ public class MainActivity extends FaBaseActivity {
 //                            mRefreshLayout.showEmptyView();
 //                            mRefreshLayout.showErrorView("无网络连接");
                             mUserInfoAdapter.clear();
-//                            mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
+                            mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
                             mRefreshLayout.endRefreshing();
                         }
                     });
