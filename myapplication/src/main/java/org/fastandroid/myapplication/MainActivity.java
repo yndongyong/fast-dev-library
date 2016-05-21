@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -15,6 +16,7 @@ import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
 import org.yndongyong.fastandroid.component.refreshlayout.RefreshLayout;
+import org.yndongyong.fastandroid.view.ActionSheetDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -111,8 +113,51 @@ public class MainActivity extends FaBaseActivity {
             @Override
             public void onRVItemClick(ViewGroup viewGroup, View view, int position) {
                 UserEntity entity = mUserInfoAdapter.getItem(position);
-                showToast(entity.getUsername()+":"+entity.getAge());
-                readyGo(SecondActivity.class);
+//                showToast(entity.getUsername()+":"+entity.getAge());
+//                readyGo(SecondActivity_.class);
+                switch (entity.getUsername()) {
+                    case "alertSheet1":
+                        new ActionSheetDialog(MainActivity.this)
+                                .builder().setCancelable(false)
+                                .setCanceledOnTouchOutside(false)
+                                .setTitle("清空消息列表后，聊天记录依然保留，确定要清空消息列表？")
+                                .addSheetItem("清空消息列表", ActionSheetDialog.SheetItemColor.Blue, new
+                                        ActionSheetDialog.OnSheetItemClickListener() {
+                                            @Override
+                                            public void onClick(int which) {
+                                                Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
+                                            }
+                                        })
+                                .show();
+                        break;
+                    case "alertSheet2":
+                        new ActionSheetDialog(MainActivity.this)
+                                .builder()
+//                                .setCancelable(false)
+//                                .setCanceledOnTouchOutside(false)
+                                .addSheetItem("item 1", ActionSheetDialog.SheetItemColor.Blue, new
+                                        ActionSheetDialog.OnSheetItemClickListener() {
+                                            @Override
+                                            public void onClick(int which) {
+                                                Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
+                                            }
+                                        })
+                                .addSheetItem("item 2", ActionSheetDialog.SheetItemColor.Blue, new
+                                        ActionSheetDialog.OnSheetItemClickListener() {
+                                            @Override
+                                            public void onClick(int which) {
+                                                Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
+                                            }
+                                        })
+                                .setNegativeButton("忽  略", ActionSheetDialog.SheetItemColor.Blue)
+                                .show();
+                        break;
+                    case "alertSheet3":
+                        break;
+                    case "alertSheet4":
+                        break;
+                }
+                
             }
         });
         mUserInfoAdapter.setOnItemChildClickListener(new BGAOnItemChildClickListener() {
@@ -155,9 +200,12 @@ public class MainActivity extends FaBaseActivity {
                         @Override
                         public void run() {
                             List<UserEntity> list = new ArrayList<UserEntity>();
-                            list.add(new UserEntity("dong", 23));
-                            list.add(new UserEntity("zhi", 24));
-                            list.add(new UserEntity("yong", 25));
+                            list.add(new UserEntity("alertSheet1", 23));
+                            list.add(new UserEntity("alertSheet2", 24));
+                            list.add(new UserEntity("alertSheet3", 25));
+                            list.add(new UserEntity("alertSheet4", 23));
+                            list.add(new UserEntity("alertSheet5", 24));
+                            list.add(new UserEntity("alertSheet6", 25));
                             mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
 //                            mRefreshLayout.showErrorView("无网络连接");

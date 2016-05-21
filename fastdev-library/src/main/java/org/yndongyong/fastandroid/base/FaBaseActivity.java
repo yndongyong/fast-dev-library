@@ -60,7 +60,6 @@ public abstract class FaBaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        d("onCreate()");
         if (this.toggleOverridePendingTransition()) {
             switch (TransitionMode.values()[this.getOverridePendingTransitionMode().ordinal()]) {
                 case LEFT:

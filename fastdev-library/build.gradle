@@ -53,4 +53,8 @@ dependencies {
     /*https://github.com/bumptech/glide*/
     compile 'com.github.bumptech.glide:glide:3.7.0'
 
+    //OkHttp 2.x 使用okhhtp支持glide
+    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0@aar'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+
 }

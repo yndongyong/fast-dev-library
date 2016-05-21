@@ -22,3 +22,5 @@
   public *;
 }
 #glide end
+#需要把OkHttp的GlideModule进行防混淆配置：
+-keep class com.bumptech.glide.integration.okhttp.OkHttpGlideModule

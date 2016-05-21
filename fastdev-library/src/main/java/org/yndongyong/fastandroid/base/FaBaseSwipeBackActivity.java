@@ -1,12 +1,14 @@
 package org.yndongyong.fastandroid.base;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import org.yndongyong.fastandroid.swipeback.SwipeBackActivityBase;
 import org.yndongyong.fastandroid.swipeback.SwipeBackActivityHelper;
 import org.yndongyong.fastandroid.swipeback.SwipeBackLayout;
 import org.yndongyong.fastandroid.swipeback.Utils;
+import org.yndongyong.fastandroid.utils.FaActivityUtil;
 
 /**
  * Created by Dong on 2016/5/12.
@@ -19,6 +21,19 @@ public abstract class FaBaseSwipeBackActivity extends FaBaseActivity implements 
         super.onCreate(savedInstanceState);
         mHelper = new SwipeBackActivityHelper(this);
         mHelper.onActivityCreate();
+        if (mToolbar != null) {
+            if (mToolbar.getNavigationIcon() != null) {
+                //TODO 有这个的一定是二级页面，且能够滑动返回
+                mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        finish();
+                        FaActivityUtil.removeActivity((AppCompatActivity)mContext);
+                    }
+                });
+                
+            }
+        }
     }
 
     @Override
