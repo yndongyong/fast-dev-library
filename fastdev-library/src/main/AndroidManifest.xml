@@ -1,11 +1,19 @@
 <manifest package="org.yndongyong.fastandroid"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!---->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
     <application android:allowBackup="true"
                  android:label="@string/app_name"
                  android:supportsRtl="true"
 
     >
+        <!--扫描二维码-->
+        <activity android:name=".component.qrcode.CaptureActivity"/>
+        <activity android:name=".component.qrcode.ResultActivity"/>
+        <!--简单格式的扫描-->
+        <activity android:name=".component.qrcode.simple.CaptureSimpleActivity"/>
     </application>
 
 </manifest>

@@ -458,7 +458,11 @@ public class AbStrUtil {
     	ip = ip.replace(".", ",");
     	String[]items = ip.split(","); 
     	return Long.valueOf(items[0])<<24 |Long.valueOf(items[1])<<16 |Long.valueOf(items[2])<<8 |Long.valueOf(items[3]); 
-    } 
+    }
+	public static boolean isUrl(String url) {
+		Pattern pattern = Pattern.compile("^([hH][tT]{2}[pP]://|[hH][tT]{2}[pP][sS]://)(([A-Za-z0-9-~]+).)+([A-Za-z0-9-~\\/])+$");
+		return pattern.matcher(url).matches();
+	}
 	
     /**
      * The main method.

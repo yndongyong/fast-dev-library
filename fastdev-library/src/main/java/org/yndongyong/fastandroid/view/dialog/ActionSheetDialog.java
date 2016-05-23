@@ -1,4 +1,4 @@
-package org.yndongyong.fastandroid.view;
+package org.yndongyong.fastandroid.view.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -24,6 +24,26 @@ import java.util.List;
 
 /**
  * 仿ios从底部弹出的dialog
+ * 用法：
+ * new ActionSheetDialog(MainActivity.this)
+ * .builder()
+ * .setCancelable(false)
+ * .setCanceledOnTouchOutside(false)
+ * .addSheetItem("item 1", ActionSheetDialog.SheetItemColor.Blue, new
+ * ActionSheetDialog.OnSheetItemClickListener() {
+ *
+ * @Override public void onResult(int which) {
+ * Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
+ * }
+ * })
+ * .addSheetItem("item 2", ActionSheetDialog.SheetItemColor.Blue, new
+ * ActionSheetDialog.OnSheetItemClickListener() {
+ * @Override public void onResult(int which) {
+ * Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
+ * }
+ * })
+ * .setNegativeButton("忽  略", ActionSheetDialog.SheetItemColor.Blue)
+ * .show();
  */
 public class ActionSheetDialog {
     private Context context;
@@ -100,10 +120,11 @@ public class ActionSheetDialog {
 
     /**
      * 设置 negativebutton 的文字颜色
+     *
      * @param color SheetItemColor
      * @return
      */
-    public ActionSheetDialog setNegativeButton(CharSequence charSequence,SheetItemColor color) {
+    public ActionSheetDialog setNegativeButton(CharSequence charSequence, SheetItemColor color) {
         // 字体颜色
         if (color == null) {
             txt_cancel.setTextColor(Color.parseColor(SheetItemColor.Red
@@ -118,11 +139,8 @@ public class ActionSheetDialog {
     }
 
     /**
-     *
-     * @param strItem
-     *            条目名称
-     * @param color
-     *            条目字体颜色，设置null则默认蓝色
+     * @param strItem  条目名称
+     * @param color    条目字体颜色，设置null则默认蓝色
      * @param listener
      * @return
      */
@@ -135,7 +153,9 @@ public class ActionSheetDialog {
         return this;
     }
 
-    /** 设置条目布局 */
+    /**
+     * 设置条目布局
+     */
     private void setSheetItems() {
         if (sheetItemList == null || sheetItemList.size() <= 0) {
             return;
@@ -243,7 +263,7 @@ public class ActionSheetDialog {
     }
 
     public enum SheetItemColor {
-        Blue("#037BFF"), Red("#FD4A2E"),Black("#000000");
+        Blue("#037BFF"), Red("#FD4A2E"), Black("#000000");
 
         private String name;
 

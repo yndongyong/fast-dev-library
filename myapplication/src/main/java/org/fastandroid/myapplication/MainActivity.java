@@ -1,8 +1,11 @@
 package org.fastandroid.myapplication;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,9 +17,18 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
+import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
+import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
 import org.yndongyong.fastandroid.component.refreshlayout.RefreshLayout;
-import org.yndongyong.fastandroid.view.ActionSheetDialog;
+import org.yndongyong.fastandroid.view.dialog.ActionSheetDialog;
+import org.yndongyong.fastandroid.view.dialog.IosDialog;
+import org.yndongyong.fastandroid.view.wheel.city.AddressData;
+import org.yndongyong.fastandroid.view.wheel.city.OnWheelChangedListener;
+import org.yndongyong.fastandroid.view.wheel.city.WheelView;
+import org.yndongyong.fastandroid.view.wheel.city.adapters.AbstractWheelTextAdapter;
+import org.yndongyong.fastandroid.view.wheel.city.adapters.ArrayWheelAdapter;
+import org.yndongyong.fastandroid.view.wheel.time.TimepickerDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +39,8 @@ import jp.wasabeef.recyclerview.animators.FadeInLeftAnimator;
 
 @EActivity
 public class MainActivity extends FaBaseActivity {
+
+    private String cityTxt;
 
     @Override
     protected int getContentViewLayoutID() {
@@ -152,10 +166,94 @@ public class MainActivity extends FaBaseActivity {
                                 .setNegativeButton("忽  略", ActionSheetDialog.SheetItemColor.Blue)
                                 .show();
                         break;
-                    case "alertSheet3":
+                    case "iosDialog3":
+                        final IosDialog dialog = new IosDialog(MainActivity.this)
+                                .builder()
+                                .setTitle("提示")
+                                .setMsg("再连续登陆15天，就可变身为QQ达人。退出QQ可能会使你现有记录归零，确定退出？")
+//                                .setEditText("1111111111111")
+//                        .setView(timepickerview1)
+                                .setNegativeButton("取消", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+
+                                    }
+                                });
+                        dialog.setPositiveButton("保存", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Toast.makeText(MainActivity.this, "test", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        dialog.show();
+                        
                         break;
-                    case "alertSheet4":
+                    case "iosDialog4":
+                        final IosDialog dialog2 = new IosDialog(MainActivity.this)
+                                .builder()
+                                .setTitle("提示")
+                                .setMsg("请输入账号")
+                                .setEditText(null,"账号")
+//                        .setView(timepickerview1)
+                                .setNegativeButton("取消", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+
+                                    }
+                                });
+                        /*dialog2.setPositiveButton("保存", new View.OnClickListener() {
+                            @Override
+                            public void onResult(View v) {
+                                d(v.toString());
+                                Toast.makeText(MainActivity.this, v.toString(), Toast.LENGTH_SHORT).show();
+                            }
+                        });*/
+                        dialog2.setPositiveButton("保存",new IosDialog.OnEditResultListener(){
+                            @Override
+                            public void onResult(CharSequence charSequence) {
+                                Toast.makeText(MainActivity.this, charSequence.toString(), Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        dialog2.show();
                         break;
+                    case "timepicker":
+                        TimepickerDialog.createDialog(MainActivity.this, "选择时间", "确定", new 
+                                TimepickerDialog
+                                .OnTimePickerResultListener() {
+                            @Override
+                            public void onResult(String timeStr) {
+                                Toast.makeText(MainActivity.this, "选择的时间是:" + timeStr, Toast.LENGTH_SHORT).show();
+                            }
+                        }).show();
+
+                        break;
+                    case "cityPicker":
+                        View view2 = dialogm();
+                        IosDialog dialog1 = new IosDialog(mContext)
+                                .builder()
+                                .setTitle("请选择收货地址")
+                                .setView(view2)
+                                .setNegativeButton("取消", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                    }
+                                });
+
+                        dialog1.setPositiveButton("确定", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Toast.makeText(mContext, cityTxt, Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        dialog1.show();
+                        break;
+                    case "qrcoder1":
+                        readyGoForResult(CaptureActivity.class, 200);
+                        break;
+                    case "qrcoder2":
+                        readyGoForResult(CaptureSimpleActivity.class, 300);
+                        break;
+                    
                 }
                 
             }
@@ -185,6 +283,23 @@ public class MainActivity extends FaBaseActivity {
         refresh();
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 200) {
+            if (resultCode == RESULT_OK) {
+                String txt = data.getExtras().getString("content");
+                Toast.makeText(mContext, txt, Toast.LENGTH_SHORT).show();
+            }
+        }
+        if (requestCode == 300) {
+            if (resultCode == RESULT_OK) {
+                String txt = data.getExtras().getString("content");
+                Toast.makeText(mContext, txt, Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     /**
      * 刷新
      */
@@ -202,10 +317,12 @@ public class MainActivity extends FaBaseActivity {
                             List<UserEntity> list = new ArrayList<UserEntity>();
                             list.add(new UserEntity("alertSheet1", 23));
                             list.add(new UserEntity("alertSheet2", 24));
-                            list.add(new UserEntity("alertSheet3", 25));
-                            list.add(new UserEntity("alertSheet4", 23));
-                            list.add(new UserEntity("alertSheet5", 24));
-                            list.add(new UserEntity("alertSheet6", 25));
+                            list.add(new UserEntity("iosDialog3", 25));
+                            list.add(new UserEntity("iosDialog4", 23));
+                            list.add(new UserEntity("timepicker", 24));
+                            list.add(new UserEntity("cityPicker", 25));
+                            list.add(new UserEntity("qrcoder1", 25));
+                            list.add(new UserEntity("qrcoder2", 25));
                             mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
 //                            mRefreshLayout.showErrorView("无网络连接");
@@ -260,6 +377,130 @@ public class MainActivity extends FaBaseActivity {
         
         return true;
     }
+    private View dialogm() {
+        View contentView = LayoutInflater.from(mContext).inflate(
+                org.yndongyong.fastandroid.R.layout.wheelcity_cities_layout, null);
+        final WheelView country = (WheelView) contentView
+                .findViewById(org.yndongyong.fastandroid.R.id.wheelcity_country);
+        country.setVisibleItems(3);
+        country.setViewAdapter(new CountryAdapter(mContext));
 
+        final String cities[][] = AddressData.CITIES;
+        final String ccities[][][] = AddressData.COUNTIES;
+        final WheelView city = (WheelView) contentView
+                .findViewById(org.yndongyong.fastandroid.R.id.wheelcity_city);
+        city.setVisibleItems(0);
+
+        // 地区选择
+        final WheelView ccity = (WheelView) contentView
+                .findViewById(org.yndongyong.fastandroid.R.id.wheelcity_ccity);
+        ccity.setVisibleItems(0);// 不限城市
+
+        country.addChangingListener(new OnWheelChangedListener() {
+            public void onChanged(WheelView wheel, int oldValue, int newValue) {
+                updateCities(city, cities, newValue);
+                cityTxt = AddressData.PROVINCES[country.getCurrentItem()]
+                        + " | "
+                        + AddressData.CITIES[country.getCurrentItem()][city
+                        .getCurrentItem()]
+                        + " | "
+                        + AddressData.COUNTIES[country.getCurrentItem()][city
+                        .getCurrentItem()][ccity.getCurrentItem()];
+            }
+        });
+
+        city.addChangingListener(new OnWheelChangedListener() {
+            public void onChanged(WheelView wheel, int oldValue, int newValue) {
+                updatecCities(ccity, ccities, country.getCurrentItem(),
+                        newValue);
+                cityTxt = AddressData.PROVINCES[country.getCurrentItem()]
+                        + " | "
+                        + AddressData.CITIES[country.getCurrentItem()][city
+                        .getCurrentItem()]
+                        + " | "
+                        + AddressData.COUNTIES[country.getCurrentItem()][city
+                        .getCurrentItem()][ccity.getCurrentItem()];
+            }
+        });
+
+        ccity.addChangingListener(new OnWheelChangedListener() {
+            public void onChanged(WheelView wheel, int oldValue, int newValue) {
+                cityTxt = AddressData.PROVINCES[country.getCurrentItem()]
+                        + " | "
+                        + AddressData.CITIES[country.getCurrentItem()][city
+                        .getCurrentItem()]
+                        + " | "
+                        + AddressData.COUNTIES[country.getCurrentItem()][city
+                        .getCurrentItem()][ccity.getCurrentItem()];
+            }
+        });
+
+        country.setCurrentItem(1);// 设置北京
+        city.setCurrentItem(1);
+        ccity.setCurrentItem(1);
+        return contentView;
+    }
+
+    /**
+     * Updates the city wheel
+     */
+    private void updateCities(WheelView city, String cities[][], int index) {
+        ArrayWheelAdapter<String> adapter = new ArrayWheelAdapter<String>(mContext,
+                cities[index]);
+        adapter.setTextSize(18);
+        city.setViewAdapter(adapter);
+        city.setCurrentItem(0);
+    }
+
+    /**
+     * Updates the ccity wheel
+     */
+    private void updatecCities(WheelView city, String ccities[][][], int index,
+                               int index2) {
+        ArrayWheelAdapter<String> adapter = new ArrayWheelAdapter<String>(mContext,
+                ccities[index][index2]);
+        adapter.setTextSize(18);
+        city.setViewAdapter(adapter);
+        city.setCurrentItem(0);
+    }
+
+    /**
+     * Adapter for countries
+     */
+    private class CountryAdapter extends AbstractWheelTextAdapter {
+        // Countries names
+        private String countries[] = AddressData.PROVINCES;
+
+        /**
+         * Constructor
+         */
+        protected CountryAdapter(Context context) {
+            super(context, org.yndongyong.fastandroid.R.layout.wheelcity_country_layout, NO_RESOURCE);
+            setItemTextResource(org.yndongyong.fastandroid.R.id.wheelcity_country_name);
+        }
+
+        @Override
+        public View getItem(int index, View cachedView, ViewGroup parent) {
+            View view = super.getItem(index, cachedView, parent);
+            return view;
+        }
+
+        @Override
+        public int getItemsCount() {
+            return countries.length;
+        }
+
+        @Override
+        protected CharSequence getItemText(int index) {
+            return countries[index];
+        }
+    }
+
+    /**
+     * 用户选择之后的回调
+     */
+    public interface OnCityPickerResultListener{
+        void onResult(String timeStr);
+    }
 
 }

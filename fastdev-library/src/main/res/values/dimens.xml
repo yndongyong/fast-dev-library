@@ -20,4 +20,12 @@
     <dimen name="text_h6">13sp</dimen>
     <dimen name="text_h7">12sp</dimen>
     <dimen name="text_title">20sp</dimen>
+
+
+    <dimen name="qrcode_crop_height">200dp</dimen>
+    <dimen name="qrcode_crop_width">200dp</dimen>
+
+
+    <dimen name="barcode_crop_height">140dp</dimen>
+    <dimen name="barcode_crop_width">260dp</dimen>
 </resources>

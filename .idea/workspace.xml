@@ -24,35 +24,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d95a220-e1a1-47fd-aa7b-995e0c2f436f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_bottom_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_bottom_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_middle_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_middle_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_single_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_single_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_top_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_top_pressed.9.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapplication/src/main/res/drawable/item_bg.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/build.gradle" afterPath="$PROJECT_DIR$/fastdev-library/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" afterPath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/proguard-rules.pro" afterPath="$PROJECT_DIR$/fastdev-library/proguard-rules.pro" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseSwipeBackActivity.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseSwipeBackActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbStrUtil.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbStrUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/values/colors.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/build.gradle" afterPath="$PROJECT_DIR$/myapplication/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/myapplication.iml" afterPath="$PROJECT_DIR$/myapplication/myapplication.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/myapplication/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/MainActivity.java" afterPath="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/SecondActivity.java" afterPath="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/SecondActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_second.xml" afterPath="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_second.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/myapplication/src/main/res/values/colors.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/myapplication/src/main/res/drawable-v21/item_bg.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable-v21/item_bg.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/ActionSheetDialog.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/ActionSheetDialog.java" />
     </list>
     <ignored path="fast-dev-library.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,96 +73,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8831967">
-              <caret line="151" column="96" selection-start-line="151" selection-start-column="96" selection-end-line="151" selection-end-column="96" />
-              <folding>
-                <element signature="e#1142#1143#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#3171#6189#0" expanded="true" />
-                <element signature="e#3956#4397#0" expanded="true" />
-                <element signature="e#4396#4397#0" expanded="true" />
-                <element signature="e#4838#5279#0" expanded="true" />
-                <element signature="e#5278#5279#0" expanded="true" />
-                <element signature="e#5376#5817#0" expanded="true" />
-                <element signature="e#5816#5817#0" expanded="true" />
-                <element signature="e#6188#6189#0" expanded="true" />
-                <element signature="e#6245#6528#0" expanded="true" />
-                <element signature="e#6527#6528#0" expanded="true" />
-                <element signature="e#6795#6796#0" expanded="true" />
-                <element signature="e#6840#6841#0" expanded="true" />
-                <element signature="e#7051#8419#0" expanded="true" />
-                <element signature="e#7218#8262#0" expanded="true" />
-                <element signature="e#7378#7390#0" expanded="true" />
-                <element signature="e#8261#8262#0" expanded="true" />
-                <element signature="e#8418#8419#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5344827">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlertDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/android/app/AlertDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.233333">
-              <caret line="440" column="11" selection-start-line="440" selection-start-column="11" selection-end-line="440" selection-end-column="11" />
-              <folding>
-                <element signature="e#16534#16535#0" expanded="true" />
-                <element signature="e#16603#16604#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlertController.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.3.0/appcompat-v7-23.3.0-sources.jar!/android/support/v7/app/AlertController.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="165" column="26" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionSheetDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/ActionSheetDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7">
-              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+              <caret line="286" column="35" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2005#2150#0" expanded="true" />
-                <element signature="e#2149#2150#0" expanded="true" />
-                <element signature="e#6932#7142#0" expanded="true" />
-                <element signature="e#7141#7142#0" expanded="true" />
-                <element signature="e#7943#7944#0" expanded="true" />
-                <element signature="e#7983#7984#0" expanded="true" />
-                <element signature="e#8018#8019#0" expanded="true" />
-                <element signature="e#8053#8054#0" expanded="true" />
-                <element signature="e#8097#8098#0" expanded="true" />
-                <element signature="e#8137#8138#0" expanded="true" />
+                <element signature="e#13121#13133#0" expanded="true" />
+                <element signature="e#14997#15009#0" expanded="true" />
+                <element signature="e#18798#18806#0" expanded="true" />
+                <element signature="e#19196#19204#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/java/lang/String.java">
+      <file leaf-file-name="CaptureSimpleActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CaptureSimpleActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.266666">
+              <caret line="261" column="5" selection-start-line="261" selection-start-column="5" selection-end-line="261" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10474#10491#0" expanded="true" />
+                <element signature="e#10518#10549#0" expanded="true" />
+                <element signature="e#10581#10596#0" expanded="true" />
+                <element signature="e#10626#10836#0" expanded="true" />
+                <element signature="e#10835#10836#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapplication/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fastdev-library/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.456422">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.5">
+              <caret line="15" column="78" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -2421,7 +2372,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5854062008464" />
+        <entry key="$PROJECT_DIR$" value="5854340543132" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2760,6 +2711,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.afollestad.material-dialogs/core/0.8.5.7/e9d987258685e6b77456ff151d87f77961c33073/core-0.8.5.7.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.zhanghai.android.materialprogressbar/library/1.1.5/afbd308dd929885b239f90e170d9b88ed292bc07/library-1.1.5.aar" />
+                            <option value="$MODULE_DIR$/libs/ZBarDecoder.jar" />
+                            <option value="$MODULE_DIR$/libs/zxing-4.7.3.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/fastdev-library" />
@@ -2874,6 +2827,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.afollestad.material-dialogs/core/0.8.5.7/e9d987258685e6b77456ff151d87f77961c33073/core-0.8.5.7.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.zhanghai.android.materialprogressbar/library/1.1.5/afbd308dd929885b239f90e170d9b88ed292bc07/library-1.1.5.aar" />
+                            <option value="$PROJECT_DIR$/fastdev-library/libs/ZBarDecoder.jar" />
+                            <option value="$PROJECT_DIR$/fastdev-library/libs/zxing-4.7.3.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/myapplication" />
@@ -3014,56 +2969,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/progress/CircularProgressDrawable.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/refreshlayout/RefreshLayoutHelper.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/progress/CircularProgressBarUtils.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/attrs.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/progress/CircularProgressBar.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/UserInfoAdapter.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/refreshlayout/DataSource.java" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/UserEntity.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/PictureVerifyCodeUtil.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/layout/view_empty.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/refreshlayout/BaseRefreshLayoutHelper.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/refreshlayout/RefreshLayout.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/refreshlayout/RefreshViewHelper.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/layout/common_toolbar.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/values/values-v19.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/values-v19/values.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/drawable/item_bg.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/layout/item_my_activity_record.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/values-v19/styles.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/values-v19/styles-v19.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/RecyclableImageView.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/RecyclerImageView.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/imageloader/FaImagerUtil.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/imageloader/FaImagerLoader.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/imageloader/FaImageHelper.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/imageloader/FaImageLoader.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/imageloader/BaseImageLoaderProvider.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/proguard-rules.pro" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/image/GlideCircleTransform.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/image/GlideRoundTransform.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java" />
-        <option value="$PROJECT_DIR$/myapplication/build/generated/source/apt/debug/org/fastandroid/myapplication/SecondActivity_.java" />
-        <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/WheelRecycle.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/WheelScroller.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/adapters/WheelViewAdapter.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/WheelView.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/adapters/AdapterWheel.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/adapters/ArrayWheelAdapter.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/adapters/NumericWheelAdapter.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/layout/wheelcity_cities_layout.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/TimepickerDialog.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/IosDialog.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbAppUtil.java" />
         <option value="$PROJECT_DIR$/myapplication/build.gradle" />
-        <option value="$PROJECT_DIR$/fastdev-library/build.gradle" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_second.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseSwipeBackActivity.java" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/SecondActivity.java" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/drawable/actionsheet_single_selector.xml" />
-        <option value="$PROJECT_DIR$/myapplication/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/layout/toast_view_actionsheet.xml" />
-        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/ActionSheetDialog.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/CityPickerDialog.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/AutoFocusManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CameraConfigurationManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CameraConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CameraManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/PreviewCallback.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/open/OpenCameraInterface.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/ResultActivity.java" />
         <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_capture.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeFormatManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeUtils.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraConfigurationManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/BeepManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/AutoFocusManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/PreviewCallback.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbStrUtil.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/InactivityTimer.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureActivityHandler.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureActivity.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/CaptureSimpleActivity.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_capture_simple.xml" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureSimpleActivity.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeHandler.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CameraActivityHandler.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeThread.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraActivityHandler.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/DecodeHandler.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/open/OpenCameraInterface.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraConfigurationManager.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/DecodeThread.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CaptureSimpleActivity.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
       </list>
     </option>
@@ -3367,7 +3322,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap-xhdpi" />
+              <option name="myItemId" value="raw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3394,6 +3349,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastdev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastdev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3453,109 +3468,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastdev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastdev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastandroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastdev-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fastandroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="progress" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3653,7 +3566,155 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastdev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastdev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="decode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastdev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fast-dev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastdev-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3674,30 +3735,29 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="D:/Android/adt-bundle-windows-x86_64-20140702/sdk" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="android.project.structure.last.selected" value="myapplication" />
+    <property name="android.project.structure.last.selected" value="fastdev-library" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="bae03462" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SwipeBackLayout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fastdev-library/libs/ZBarDecoder.jar" />
     <property name="DEBUGGABLE_DEVICE" value="motorola-nexus_6-ZX1G422D5R" />
     <property name="DEBUGGABLE_PROCESS" value="org.fastandroid.myapplication" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="SearchEverywhereHistoryKey" value="AlertController&#9;FILE&#9;jar://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.3.0/appcompat-v7-23.3.0-sources.jar!/android/support/v7/app/AlertController.java&#10;alertdialog&#9;PSI&#9;JAVA://android.app.AlertDialog&#10;alert&#9;PSI&#9;JAVA://android.support.v7.app.AlertDialog&#10; &#9;FILE&#9;jar://E:/studio_workspace/fast-dev-library/fastdev-library/libs/classes.jar!/cn/com/enersun/enersunlibrary/view/progress/CircularProgressDrawable.class&#10;CircularProgressDrawable&#9;PSI&#9;JAVA://cn.com.enersun.enersunlibrary.view.progress.CircularProgressDrawable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable-hdpi" />
-      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable-v21" />
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable-xhdpi" />
+      <recent name="E:\studio_workspace\fast-dev-library\myapplication\src\main\res\values-v19" />
       <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\mipmap-xhdpi" />
-      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\layout" />
-      <recent name="E:\studio_workspace\fast-dev-library\myapplication\src\main\res\drawable" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.yndongyong.fastandroid.test" />
@@ -3706,14 +3766,17 @@
       <recent name="org.yndongyong.fastandroid" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.yndongyong.fastandroid.component.qrcode" />
+      <recent name="org.yndongyong.fastandroid.component" />
       <recent name="org.yndongyong.fastandroid.view" />
       <recent name="org.yndongyong.fastandroid.utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable-v21" />
-      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable-xhdpi" />
-      <recent name="E:\studio_workspace\fast-dev-library\myapplication\src\main\res\values-v19" />
-      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\mipmap-xhdpi" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\java\org\yndongyong\fastandroid\component\qrcode\simple" />
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable" />
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\layout" />
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res" />
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\res\drawable-hdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.myapplication">
@@ -4019,30 +4082,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115733735" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2901024" sideWeight="0.61724657" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22866894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11774744" sideWeight="0.81467474" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20574887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5477816" sideWeight="0.76475036" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19624573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3668942" sideWeight="0.81013614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31740615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5307167" sideWeight="0.17170954" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4453925" sideWeight="0.18532526" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33617747" sideWeight="0.5400908" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20648465" sideWeight="0.26096824" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.023890786" sideWeight="0.18986385" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20648465" sideWeight="0.7390318" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.040955633" sideWeight="0.5400908" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27382752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30030257" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26279864" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -4054,29 +4117,29 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11774744" sideWeight="0.81467474" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.100682594" sideWeight="0.81013614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5307167" sideWeight="0.17170954" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4453925" sideWeight="0.18532526" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.023890786" sideWeight="0.18986385" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27382752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31996974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26279864" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2901024" sideWeight="0.61724657" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115733735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22866894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5477816" sideWeight="0.76475036" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36308622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19624573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31740615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33617747" sideWeight="0.5400908" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.040955633" sideWeight="0.5400908" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -4120,145 +4183,98 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/mipmap-xhdpi/shadow_left.png">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/adapters/WheelViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5278276">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/layout/wheelcity_cities_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6712329">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/mipmap-xhdpi/shadow_bottom.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/mipmap-xhdpi/ic_retry.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/mipmap-xhdpi/ic_error.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/src/main/res/mipmap-xhdpi/ico_empty.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/24a0b0e63af9530bcedd06ed1983a4f2f02155a3/glide-3.7.0-sources.jar!/com/bumptech/glide/Glide.java">
+    <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/android/view/KeyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="650" column="33" selection-start-line="650" selection-start-column="33" selection-end-line="650" selection-end-column="33" />
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33153638">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/24a0b0e63af9530bcedd06ed1983a4f2f02155a3/glide-3.7.0-sources.jar!/com/bumptech/glide/manager/RequestTracker.java">
+    <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/android/app/Dialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/24a0b0e63af9530bcedd06ed1983a4f2f02155a3/glide-3.7.0-sources.jar!/com/bumptech/glide/GenericRequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="696" column="0" selection-start-line="696" selection-start-column="0" selection-end-line="696" selection-end-column="0" />
+          <caret line="91" column="19" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/24a0b0e63af9530bcedd06ed1983a4f2f02155a3/glide-3.7.0-sources.jar!/com/bumptech/glide/DrawableRequestBuilder.java">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/IosDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="447" column="0" selection-start-line="447" selection-start-column="0" selection-end-line="447" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.133333">
+          <caret line="284" column="5" selection-start-line="279" selection-start-column="3" selection-end-line="284" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8509#8510#0" expanded="false" />
+            <element signature="e#8538#8539#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/android/app/Activity.java">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbAppUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33153638">
-          <caret line="5084" column="0" selection-start-line="5084" selection-start-column="0" selection-end-line="5084" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/src/main/res/mipmap-xhdpi/ico_shake.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4031008">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.013544">
+          <caret line="231" column="37" selection-start-line="231" selection-start-column="37" selection-end-line="231" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/mipmap-xhdpi/ic_empty.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/TimepickerDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state vertical-scroll-proportion="-11.766666">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/24a0b0e63af9530bcedd06ed1983a4f2f02155a3/glide-3.7.0-sources.jar!/com/bumptech/glide/RequestManager.java">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/CityPickerDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.662531">
-          <caret line="282" column="39" selection-start-line="282" selection-start-column="39" selection-end-line="282" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.6983842">
+          <caret line="185" column="5" selection-start-line="61" selection-start-column="4" selection-end-line="185" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1492#1493#0" expanded="false" />
+            <element signature="e#1545#1794#0" expanded="false" />
+            <element signature="e#1793#1794#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.466666">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0223324">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1364765">
-          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0421836">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/selector_common_button.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/result_content_bg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -4266,291 +4282,404 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/src/main/res/layout/activity_second.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_result.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36842105">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state vertical-scroll-proportion="-0.3943662">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.8">
-          <caret line="89" column="21" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseSwipeBackActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.8">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#1029#1295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/SecondActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/RecyclerImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_top_pressed.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_top_normal.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_single_pressed.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_single_normal.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_middle_pressed.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_middle_normal.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_bottom_pressed.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-xhdpi/toast_actionsheet_bottom_normal.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6397059">
-          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapplication/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4632353">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/anim/bottom_in.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6911765">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.4157896">
-          <caret line="98" column="28" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/actionsheet_bottom_selector.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/light_selector.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8">
-          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.7259259">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable-v21/item_bg.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/qrcode_selector.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.6519337">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/alertdialog_left_selector.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/barcode_selector.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25454545">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.5939227">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/item_bg.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeFormatManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27893737">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/layout/toast_view_actionsheet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57471263">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
           <folding>
-            <element signature="e#1663#1698#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1762#1763#0" expanded="false" />
+            <element signature="e#1798#1799#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20825852">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#7707#7708#0" expanded="false" />
+            <element signature="e#7744#7745#0" expanded="false" />
+            <element signature="e#7789#7790#0" expanded="false" />
+            <element signature="e#7830#7831#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4727955">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/AutoFocusManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5459661">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/PreviewCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3789868">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbStrUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3069307">
+          <caret line="460" column="5" selection-start-line="460" selection-start-column="5" selection-end-line="460" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/ResultActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0061475">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1626#1627#0" expanded="false" />
+            <element signature="e#1673#1674#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/InactivityTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55942625">
+          <caret line="82" column="11" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+          <folding>
+            <element signature="e#2620#2621#0" expanded="false" />
+            <element signature="e#2644#2645#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/BeepManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0389345">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureActivityHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0327868">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="340" column="24" selection-start-line="340" selection-start-column="24" selection-end-line="340" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_capture.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54325956">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/actionsheet_single_selector.xml">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/drawable/camera_bg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25735295">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state vertical-scroll-proportion="-6.3">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.3.0/appcompat-v7-23.3.0-sources.jar!/android/support/v7/app/AlertDialog.java">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52064633">
-          <caret line="95" column="25" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/android/app/AlertDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.233333">
-          <caret line="440" column="11" selection-start-line="440" selection-start-column="11" selection-end-line="440" selection-end-column="11" />
-          <folding>
-            <element signature="e#16534#16535#0" expanded="true" />
-            <element signature="e#16603#16604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.3.0/appcompat-v7-23.3.0-sources.jar!/android/support/v7/app/AlertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="26" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/adt-bundle-windows-x86_64-20140702/sdk/sources/android-23/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state vertical-scroll-proportion="-13.366667">
+          <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5344827">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state vertical-scroll-proportion="-3.6206896">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/ActionSheetDialog.java">
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_capture_simple.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state vertical-scroll-proportion="-1.7464789">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2005#2150#0" expanded="true" />
-            <element signature="e#2149#2150#0" expanded="true" />
-            <element signature="e#6932#7142#0" expanded="true" />
-            <element signature="e#7141#7142#0" expanded="true" />
-            <element signature="e#7943#7944#0" expanded="true" />
-            <element signature="e#7983#7984#0" expanded="true" />
-            <element signature="e#8018#8019#0" expanded="true" />
-            <element signature="e#8053#8054#0" expanded="true" />
-            <element signature="e#8097#8098#0" expanded="true" />
-            <element signature="e#8137#8138#0" expanded="true" />
+            <element signature="e#3598#3619#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.133333">
+          <caret line="309" column="61" selection-start-line="309" selection-start-column="39" selection-end-line="309" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8804#8805#0" expanded="false" />
+            <element signature="e#9036#9037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47217235">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#4666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8473968">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CameraActivityHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33931777">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/DecodeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9802514">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraConfigurationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0341113">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraConfigurationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8114901">
+          <caret line="415" column="55" selection-start-line="415" selection-start-column="55" selection-end-line="415" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.087971">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/open/OpenCameraInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40754038">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#2709#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraConfigurationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37701976">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/AutoFocusManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9964094">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/DecodeThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45421904">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/PreviewCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.24416517">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36983842">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraActivityHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48294434">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myapplication/src/main/java/org/fastandroid/myapplication/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8831967">
-          <caret line="151" column="96" selection-start-line="151" selection-start-column="96" selection-end-line="151" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="286" column="35" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="35" />
           <folding>
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#3171#6189#0" expanded="true" />
-            <element signature="e#3956#4397#0" expanded="true" />
-            <element signature="e#4396#4397#0" expanded="true" />
-            <element signature="e#4838#5279#0" expanded="true" />
-            <element signature="e#5278#5279#0" expanded="true" />
-            <element signature="e#5376#5817#0" expanded="true" />
-            <element signature="e#5816#5817#0" expanded="true" />
-            <element signature="e#6188#6189#0" expanded="true" />
-            <element signature="e#6245#6528#0" expanded="true" />
-            <element signature="e#6527#6528#0" expanded="true" />
-            <element signature="e#6795#6796#0" expanded="true" />
-            <element signature="e#6840#6841#0" expanded="true" />
-            <element signature="e#7051#8419#0" expanded="true" />
-            <element signature="e#7218#8262#0" expanded="true" />
-            <element signature="e#7378#7390#0" expanded="true" />
-            <element signature="e#8261#8262#0" expanded="true" />
-            <element signature="e#8418#8419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#13121#13133#0" expanded="true" />
+            <element signature="e#14997#15009#0" expanded="true" />
+            <element signature="e#18798#18806#0" expanded="true" />
+            <element signature="e#19196#19204#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CaptureSimpleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.266666">
+          <caret line="261" column="5" selection-start-line="261" selection-start-column="5" selection-end-line="261" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10474#10491#0" expanded="true" />
+            <element signature="e#10518#10549#0" expanded="true" />
+            <element signature="e#10581#10596#0" expanded="true" />
+            <element signature="e#10626#10836#0" expanded="true" />
+            <element signature="e#10835#10836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapplication/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.456422">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
