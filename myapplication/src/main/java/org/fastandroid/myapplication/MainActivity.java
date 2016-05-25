@@ -17,6 +17,7 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
+import org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity;
 import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
 import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
@@ -49,7 +50,7 @@ public class MainActivity extends FaBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       
+
         mTransitionMode = TransitionMode.DEFAULT;
         super.onCreate(savedInstanceState);
         d("onCreate()");
@@ -69,7 +70,7 @@ public class MainActivity extends FaBaseActivity {
     protected void onResume() {
         d("onResume()");
         super.onResume();
-        
+
     }
 
     @Override
@@ -186,14 +187,14 @@ public class MainActivity extends FaBaseActivity {
                             }
                         });
                         dialog.show();
-                        
+
                         break;
                     case "iosDialog4":
                         final IosDialog dialog2 = new IosDialog(MainActivity.this)
                                 .builder()
                                 .setTitle("提示")
                                 .setMsg("请输入账号")
-                                .setEditText(null,"账号")
+                                .setEditText(null, "账号")
 //                        .setView(timepickerview1)
                                 .setNegativeButton("取消", new View.OnClickListener() {
                                     @Override
@@ -208,7 +209,7 @@ public class MainActivity extends FaBaseActivity {
                                 Toast.makeText(MainActivity.this, v.toString(), Toast.LENGTH_SHORT).show();
                             }
                         });*/
-                        dialog2.setPositiveButton("保存",new IosDialog.OnEditResultListener(){
+                        dialog2.setPositiveButton("保存", new IosDialog.OnEditResultListener() {
                             @Override
                             public void onResult(CharSequence charSequence) {
                                 Toast.makeText(MainActivity.this, charSequence.toString(), Toast.LENGTH_SHORT).show();
@@ -217,14 +218,14 @@ public class MainActivity extends FaBaseActivity {
                         dialog2.show();
                         break;
                     case "timepicker":
-                        TimepickerDialog.createDialog(MainActivity.this, "选择时间", "确定", new 
+                        TimepickerDialog.createDialog(MainActivity.this, "选择时间", "确定", new
                                 TimepickerDialog
-                                .OnTimePickerResultListener() {
-                            @Override
-                            public void onResult(String timeStr) {
-                                Toast.makeText(MainActivity.this, "选择的时间是:" + timeStr, Toast.LENGTH_SHORT).show();
-                            }
-                        }).show();
+                                        .OnTimePickerResultListener() {
+                                    @Override
+                                    public void onResult(String timeStr) {
+                                        Toast.makeText(MainActivity.this, "选择的时间是:" + timeStr, Toast.LENGTH_SHORT).show();
+                                    }
+                                }).show();
 
                         break;
                     case "cityPicker":
@@ -253,19 +254,23 @@ public class MainActivity extends FaBaseActivity {
                     case "qrcoder2":
                         readyGoForResult(CaptureSimpleActivity.class, 300);
                         break;
-                    
+                    case "FaSingleImageActivity":
+                        String url = "http://ww2.sinaimg.cn/mw690/718878b5jw1f4548jqmtfj20go0b3mzx.jpg";
+                        FaSingleImageActivity.actionStart(MainActivity.this, url, null);
+                        break;
+
                 }
-                
+
             }
         });
         mUserInfoAdapter.setOnItemChildClickListener(new BGAOnItemChildClickListener() {
             @Override
             public void onItemChildClick(ViewGroup viewGroup, View childView, int position) {
                 TextView tvAge = (TextView) childView;
-                showToast("child:"+tvAge.getText());
+                showToast("child:" + tvAge.getText());
             }
         });
-        
+
         mRefreshLayout.setDataSource(new DataSource(mContext) {
             @Override
             public void refreshData() {
@@ -279,7 +284,7 @@ public class MainActivity extends FaBaseActivity {
             }
         });
 
-        
+
         refresh();
     }
 
@@ -323,6 +328,7 @@ public class MainActivity extends FaBaseActivity {
                             list.add(new UserEntity("cityPicker", 25));
                             list.add(new UserEntity("qrcoder1", 25));
                             list.add(new UserEntity("qrcoder2", 25));
+                            list.add(new UserEntity("FaSingleImageActivity", 25));
                             mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
 //                            mRefreshLayout.showErrorView("无网络连接");
@@ -333,7 +339,7 @@ public class MainActivity extends FaBaseActivity {
                     });
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                    
+
                 }
             }
         }).start();
@@ -341,6 +347,7 @@ public class MainActivity extends FaBaseActivity {
 
     /**
      * 上拉加载
+     *
      * @return
      */
     private boolean load() {
@@ -374,9 +381,10 @@ public class MainActivity extends FaBaseActivity {
                 }
             }
         }).start();
-        
+
         return true;
     }
+
     private View dialogm() {
         View contentView = LayoutInflater.from(mContext).inflate(
                 org.yndongyong.fastandroid.R.layout.wheelcity_cities_layout, null);
@@ -499,7 +507,7 @@ public class MainActivity extends FaBaseActivity {
     /**
      * 用户选择之后的回调
      */
-    public interface OnCityPickerResultListener{
+    public interface OnCityPickerResultListener {
         void onResult(String timeStr);
     }
 

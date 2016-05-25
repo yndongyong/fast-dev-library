@@ -22,6 +22,8 @@ android {
 }
 
 dependencies {
+    
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
@@ -53,4 +55,6 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.7.5'
     compile files('libs/zxing-4.7.3.jar')
     compile files('libs/ZBarDecoder.jar')
+    //ptotoview
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
 }

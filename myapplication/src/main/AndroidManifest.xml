@@ -21,8 +21,12 @@
         <activity android:name=".SecondActivity_"
                   android:theme="@style/AppTheme.Default"
         >
-            
         </activity>
+        <activity
+            android:name="org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity"
+            android:theme="@style/AppTheme.Default"
+        ></activity>
+        
     </application>
 
 </manifest>
