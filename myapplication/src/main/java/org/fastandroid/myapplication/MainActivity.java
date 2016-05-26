@@ -255,8 +255,8 @@ public class MainActivity extends FaBaseActivity {
                         readyGoForResult(CaptureSimpleActivity.class, 300);
                         break;
                     case "FaSingleImageActivity":
-                        String url = "http://ww2.sinaimg.cn/mw690/718878b5jw1f4548jqmtfj20go0b3mzx.jpg";
-                        FaSingleImageActivity.actionStart(MainActivity.this, url, null);
+                        
+                        SecondActivity_.intent(MainActivity.this).start();
                         break;
 
                 }

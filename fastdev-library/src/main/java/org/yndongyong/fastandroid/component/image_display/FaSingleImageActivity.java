@@ -52,14 +52,13 @@ public class FaSingleImageActivity extends FaBaseActivity {
     public static void actionStart(Context act, String loadUrl, int loctionX, int locationY,
                                    int width,int height,Bitmap bitmap) {
         Intent intent = new Intent(act, FaSingleImageActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putString(INTENT_IMAGE_URL_TAG, loadUrl);
-        bundle.putInt(INTENT_IMAGE_X_TAG, loctionX);
-        bundle.putInt(INTENT_IMAGE_Y_TAG, locationY);
-        bundle.putInt(INTENT_IMAGE_W_TAG, width);
-        bundle.putInt(INTENT_IMAGE_H_TAG, height);
-        bundle.putParcelable(INTENT_IMAGE_BITMAP_TAG,bitmap);
-        act.startActivity(intent, bundle);
+        intent.putExtra(INTENT_IMAGE_URL_TAG, loadUrl);
+        intent.putExtra(INTENT_IMAGE_X_TAG, loctionX);
+        intent.putExtra(INTENT_IMAGE_Y_TAG, locationY);
+        intent.putExtra(INTENT_IMAGE_W_TAG, width);
+        intent.putExtra(INTENT_IMAGE_H_TAG, height);
+        intent.putExtra(INTENT_IMAGE_BITMAP_TAG,bitmap);
+        act.startActivity(intent);
     }
 
     /**
