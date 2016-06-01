@@ -465,7 +465,7 @@ public class AbFileUtil {
 	
 	 
 	/**
-	 * 获取真实文件名（xx.后缀），通过网络获取.
+	 * 获取真实文件名（CustomView.后缀），通过网络获取.
 	 * @param connection 连接
 	 * @return 文件名
 	 */

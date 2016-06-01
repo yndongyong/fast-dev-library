@@ -87,7 +87,7 @@ public class AbAppUtil {
 	 * 用来判断服务是否运行.
 	 *
 	 * @param context the context
-	 * @param className 判断的服务名字 "com.xxx.xx..XXXService"
+	 * @param className 判断的服务名字 "com.xxx.CustomView..XXXService"
 	 * @return true 在运行 false 不在运行
 	 */
 	public static boolean isServiceRunning(Context context, String className) {
