@@ -3,13 +3,12 @@ package org.fastandroid.myapplication;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
-
-import org.yndongyong.fastandroid.utils.AbImageUtil;
-import org.yndongyong.fastandroid.utils.AbScreenUtils;
 
 /**
  * Created by Dong on 2016/6/1.
@@ -86,7 +85,7 @@ public class CustomView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.translate(mWidth / 2, mHeight / 2);//讲坐标原点从0，0移动到view的中心
+        canvas.translate(mWidth / 2, mHeight / 2);//将坐标原点从0，0移动到view的中心
         canvas.drawPoint(0, 0, mPaint);
         //画坐标轴
         canvas.drawPoints(new float[]{
@@ -124,11 +123,62 @@ public class CustomView extends View {
         
         canvas.drawPath(ypath,mPaint);
         //绘制矩形
-        mPaint.setStyle(Paint.Style.STROKE);
+        /*mPaint.setStyle(Paint.Style.STROKE);
         float l = -mWidth/8;
         float t = -mHeight/8;
         float r = mWidth / 8;
         float b = mHeight / 8;
-        canvas.drawRect(l, t, r, b,mPaint);
+        canvas.drawRect(l, t, r, b,mPaint);*/
+
+        
+        //画布平移
+       /* canvas.translate(200, 200);//移动画布的坐标原点
+        mPaint.setColor(Color.BLUE);
+        canvas.drawRect(l, t, r, b,mPaint);*/
+        
+        //画布旋转
+       /* canvas.rotate(90);
+        mPaint.setColor(Color.BLUE);
+        canvas.drawRect(l, t, r, b,mPaint);*/
+        //缩放
+       /* canvas.scale(0.5f,0.5f);
+        mPaint.setColor(Color.BLUE);
+        canvas.drawRect(l, t, r, b,mPaint);*/
+        //错切
+       /* canvas.skew(0.5f,0.5f);
+        mPaint.setColor(Color.BLUE);
+        canvas.drawRect(l, t, r, b,mPaint);*/
+        
+        //画布的保存
+        /*mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(4);
+        canvas.drawCircle(400, 0, 100, mPaint);
+        int saveCount = canvas.save();
+        mPaint.setColor(Color.BLUE);
+        canvas.rotate(90);
+        canvas.drawCircle(400, 0, 100, mPaint);
+        canvas.restoreToCount(saveCount);
+        mPaint.setColor(0xaa9e9394);
+        canvas.drawCircle(600, 0, 100, mPaint);*/
+
+        //豆瓣加载动画
+        
+        //绘制连个点和半圆弧
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(10);
+        mPaint.setColor(Color.GREEN);
+
+        float p = Math.min(mHeight, mWidth) * 0.2f/2;
+        float r = p * (float) Math.sqrt(2);
+        RectF rect = new RectF(-r, -r, r, r);
+       /* canvas.drawArc(rect, 0, 180, false, mPaint);
+        
+        canvas.drawPoints(new float[]{
+               -p,-p,p,-p 
+        },mPaint);*/
+        
+        //旋转动画是的一帧是一个270的圆弧
+        
+        canvas.drawArc(rect,-180,270,false,mPaint);
     }
 }

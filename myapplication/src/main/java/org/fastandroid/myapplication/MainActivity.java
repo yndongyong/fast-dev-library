@@ -17,7 +17,9 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
+import org.yndongyong.fastandroid.component.image_display.FaPicScanActivity;
 import org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity;
+import org.yndongyong.fastandroid.component.image_display.PicScanModel;
 import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
 import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
@@ -30,6 +32,7 @@ import org.yndongyong.fastandroid.view.wheel.city.WheelView;
 import org.yndongyong.fastandroid.view.wheel.city.adapters.AbstractWheelTextAdapter;
 import org.yndongyong.fastandroid.view.wheel.city.adapters.ArrayWheelAdapter;
 import org.yndongyong.fastandroid.view.wheel.time.TimepickerDialog;
+import org.yndongyong.fastandroid.viewmodel.SerializableList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -258,7 +261,43 @@ public class MainActivity extends FaBaseActivity {
                         
                         SecondActivity_.intent(MainActivity.this).start();
                         break;
+//                    list.add(new UserEntity("DoubanLoading", 25));
+//                    list.add(new UserEntity("FaPicScanActivity", 25));
+                    case "DoubanLoading":
+                        readyGo(ThirdActivity.class);
+                        break;
+                    case "FaPicScanActivity":
+                        SerializableList<PicScanModel> imags = new SerializableList<PicScanModel>();
+                        List<PicScanModel> list = new ArrayList<PicScanModel>();
+                        PicScanModel picScanModel ;
+                        
+                        picScanModel = new PicScanModel();
+                        picScanModel.setRemark("第一章图片");
+                        picScanModel.setUrl("http://ww4.sinaimg.cn/mw690/81ded7bagw1f4gxxuyyr9j20c80lzmzl.jpg");
+                        list.add(picScanModel);
 
+                        picScanModel = new PicScanModel();
+                        picScanModel.setRemark("第二章图片");
+                        picScanModel.setUrl("http://ww4.sinaimg.cn/mw690/006nS8nZgw1f4gpwhzmb9j30u01hcafa.jpg");
+                        list.add(picScanModel);
+
+                        picScanModel = new PicScanModel();
+                        picScanModel.setRemark("第三章图片");
+                        picScanModel.setUrl("http://ww3.sinaimg.cn/mw690/ad673c42gw1f4gxop3jufj20ku112ah9.jpg");
+                        list.add(picScanModel);
+
+                        picScanModel = new PicScanModel();
+                        picScanModel.setRemark("第四章图片");
+                        picScanModel.setUrl("http://ww1.sinaimg.cn/mw690/c4ff9961gw1f4gx7xmtprj20j60y3grz.jpg");
+                        list.add(picScanModel);
+                        
+                        imags.setLis(list);
+                        
+                        Intent intent = new Intent(mContext, FaPicScanActivity.class);
+                        intent.putExtra(FaPicScanActivity.EXTRA_CURRENT_INDEX, 0);
+                        intent.putExtra(FaPicScanActivity.EXTRA_IMAGES, imags);
+                        readyGo(intent);                
+                        break;
                 }
 
             }
@@ -329,6 +368,9 @@ public class MainActivity extends FaBaseActivity {
                             list.add(new UserEntity("qrcoder1", 25));
                             list.add(new UserEntity("qrcoder2", 25));
                             list.add(new UserEntity("FaSingleImageActivity", 25));
+                            list.add(new UserEntity("DoubanLoading", 25));
+                            list.add(new UserEntity("FaPicScanActivity", 25));
+                            
                             mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
 //                            mRefreshLayout.showErrorView("无网络连接");

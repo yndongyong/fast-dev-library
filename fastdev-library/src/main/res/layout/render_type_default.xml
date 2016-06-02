@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/daimajia_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <org.yndongyong.fastandroid.view.progress.CircularProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/common_loading_progress_size"
+        android:layout_height="@dimen/common_loading_progress_size"
+        android:indeterminate="true"
+        android:indeterminateOnly="false"
+        app:cpb_colors="@array/gplus_colors" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/daimajia_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+    <org.yndongyong.fastandroid.view.progress.CircularProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="@dimen/common_loading_progress_size"
+        android:layout_height="@dimen/common_loading_progress_size"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateOnly="false"
+        app:cpb_colors="@array/gplus_colors" />
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#77000000"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>

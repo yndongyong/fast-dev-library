@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#F9F9F9"
     tools:context="org.fastandroid.myapplication.ThirdActivity">
     
-    <org.fastandroid.myapplication.CustomView
+    <org.fastandroid.myapplication.DouBanLoadView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

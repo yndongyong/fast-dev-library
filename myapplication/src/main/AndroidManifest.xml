@@ -13,6 +13,11 @@
         <activity
             android:name=".MainActivity_"
             android:theme="@style/AppTheme.Default.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
 
         </activity>
         <activity
@@ -21,14 +26,18 @@
         </activity>
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity"
-            android:theme="@style/AppTheme.Default"/>
-        <activity android:name=".ThirdActivity"
-                  android:theme="@style/AppTheme.Default">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+            android:theme="@style/AppTheme.Default"
+            android:label="预览单个图片"
+        />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        <activity
+            android:name="org.yndongyong.fastandroid.component.image_display.FaPicScanActivity"
+            android:theme="@style/AppTheme.Default"
+            android:label="预览多个图片"
+        />
+        <activity android:name=".ThirdActivity"
+                  android:theme="@style/AppTheme.Default.NoStatusBar">
+            
         </activity>
     </application>
 

@@ -22,5 +22,9 @@
     <style name="AppTheme.Default.Start">
         <item name="android:windowIsTranslucent">false</item>
     </style>
+
+    <style name="AppTheme.Default.NoStatusBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
     
 </resources>
