@@ -3,11 +3,16 @@ package org.fastandroid.myapplication;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.google.gson.Gson;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -15,7 +20,11 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseSwipeBackActivity;
 import org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity;
+import org.yndongyong.fastandroid.okhttp.OkHttpUtils;
+import org.yndongyong.fastandroid.okhttp.callback.Callback;
 import org.yndongyong.fastandroid.view.RecyclerImageView;
+
+import java.io.IOException;
 
 /**
  * Created by Dong on 2016/5/15.
@@ -35,6 +44,9 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
 
     @ViewById
     RecyclerImageView head3;
+    @ViewById
+    TextView data;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +66,8 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
                 .into(head);*/
 
 
-
     }
+
     static class CommonRequestListener implements RequestListener {
 
         @Override
@@ -69,10 +81,11 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
             Log.d("dong", "onResourceReady:" + resource.toString());
             return false;
         }
-        
+
     }
+
     @AfterViews
-    void afterViews(){
+    void afterViews() {
         d("afterViews()");
         Glide.with(this).load("http://ww4.sinaimg.cn/mw690/6cb26641gw1f429qm5uhyj20w00hsgnn.jpg")
                 .placeholder(R.mipmap.ico_empty)//站位图片
@@ -110,10 +123,13 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
 //                .fitCenter()//整个图都缩小显示
                 .into(head3);
 
-       
+
+        
+
     }
+
     @Click(R.id.head)
-    public  void onClick(View view) {
+    public void onClick(View view) {
         String url = "http://ww4.sinaimg.cn/mw690/6cb26641gw1f429qm5uhyj20w00hsgnn.jpg";
         int[] location = new int[2];
         view.getLocationOnScreen(location);
@@ -121,11 +137,12 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
         int locationY = location[1];
         int width = view.getWidth();
         int height = view.getWidth();
-        
-        FaSingleImageActivity.actionStart(this, url,locationX,locationY,width,height, null);
+
+        FaSingleImageActivity.actionStart(this, url, locationX, locationY, width, height, null);
     }
+
     @Click(R.id.head2)
-    public  void onClick2(View view) {
+    public void onClick2(View view) {
         String url = "http://ww2.sinaimg.cn/mw690/006tnXvegw1f4328siu8hj30qo0zk7e9.jpg";
         int[] location = new int[2];
         view.getLocationOnScreen(location);
@@ -134,10 +151,11 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
         int width = view.getWidth();
         int height = view.getWidth();
 
-        FaSingleImageActivity.actionStart(this, url,locationX,locationY,width,height, null);
+        FaSingleImageActivity.actionStart(this, url, locationX, locationY, width, height, null);
     }
+
     @Click(R.id.head3)
-    public  void onClick3(View view) {
+    public void onClick3(View view) {
         String url = "http://ww2.sinaimg.cn/mw690/718878b5jw1f4548jqmtfj20go0b3mzx.jpg";
         int[] location = new int[2];
         view.getLocationOnScreen(location);
@@ -145,7 +163,7 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
         int locationY = location[1];
         int width = view.getWidth();
         int height = view.getWidth();
-        FaSingleImageActivity.actionStart(this, url,locationX,locationY,width,height, null);
+        FaSingleImageActivity.actionStart(this, url, locationX, locationY, width, height, null);
     }
 
     @Override

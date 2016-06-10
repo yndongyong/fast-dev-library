@@ -43,7 +43,7 @@ public class DouBanLoadView extends View {
         mPaint = new Paint();
         mPaint.setColor(Color.GREEN);
         mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeWidth(20);
+        mPaint.setStrokeWidth(10);
         mPaint.setAntiAlias(true);
         mPaint.setDither(true);
         mPaint.setStrokeCap(Paint.Cap.ROUND);//设置笔锋

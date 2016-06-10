@@ -13,6 +13,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
@@ -24,6 +28,9 @@ import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
 import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
 import org.yndongyong.fastandroid.component.refreshlayout.RefreshLayout;
+import org.yndongyong.fastandroid.global.AbAppException;
+import org.yndongyong.fastandroid.okhttp.OkHttpUtils;
+import org.yndongyong.fastandroid.okhttp.callback.Callback;
 import org.yndongyong.fastandroid.view.dialog.ActionSheetDialog;
 import org.yndongyong.fastandroid.view.dialog.IosDialog;
 import org.yndongyong.fastandroid.view.wheel.city.AddressData;
@@ -34,11 +41,15 @@ import org.yndongyong.fastandroid.view.wheel.city.adapters.ArrayWheelAdapter;
 import org.yndongyong.fastandroid.view.wheel.time.TimepickerDialog;
 import org.yndongyong.fastandroid.viewmodel.SerializableList;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.bingoogolapple.androidcommon.adapter.BGAOnItemChildClickListener;
 import cn.bingoogolapple.androidcommon.adapter.BGAOnRVItemClickListener;
+import cn.bingoogolapple.androidcommon.adapter.BGARecyclerViewHolder;
+import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
+import cn.bingoogolapple.refreshlayout.BGARefreshViewHolder;
 import jp.wasabeef.recyclerview.animators.FadeInLeftAnimator;
 
 @EActivity
@@ -119,7 +130,10 @@ public class MainActivity extends FaBaseActivity {
         d("afterViews()");
         mRefreshLayout.setEmptyImage(R.mipmap.ico_empty);
         mRefreshLayout.setErrorImage(R.mipmap.ico_empty);
-
+        BGARefreshViewHolder viewholder = new BGANormalRefreshViewHolder(this, true);
+        viewholder.setLoadingMoreText("正在卖力加载...");
+        mRefreshLayout.setRefreshViewHolder(viewholder);
+        
         mUserInfoAdapter = new UserInfoAdapter(mRecyclerView);
         mUserInfoAdapter.setDatas(userEntities);
 
@@ -323,7 +337,7 @@ public class MainActivity extends FaBaseActivity {
             }
         });
 
-
+        
         refresh();
     }
 
@@ -348,43 +362,57 @@ public class MainActivity extends FaBaseActivity {
      * 刷新
      */
     private void refresh() {
-        mRefreshLayout.showLoadingView();
-        mUserInfoAdapter.getDatas().clear();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(3000);
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            List<UserEntity> list = new ArrayList<UserEntity>();
-                            list.add(new UserEntity("alertSheet1", 23));
-                            list.add(new UserEntity("alertSheet2", 24));
-                            list.add(new UserEntity("iosDialog3", 25));
-                            list.add(new UserEntity("iosDialog4", 23));
-                            list.add(new UserEntity("timepicker", 24));
-                            list.add(new UserEntity("cityPicker", 25));
-                            list.add(new UserEntity("qrcoder1", 25));
-                            list.add(new UserEntity("qrcoder2", 25));
-                            list.add(new UserEntity("FaSingleImageActivity", 25));
-                            list.add(new UserEntity("DoubanLoading", 25));
-                            list.add(new UserEntity("FaPicScanActivity", 25));
-                            
-                            mRefreshLayout.showContentView();
-//                            mRefreshLayout.showEmptyView();
-//                            mRefreshLayout.showErrorView("无网络连接");
-                            mUserInfoAdapter.clear();
-                            mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
-                            mRefreshLayout.endRefreshing();
-                        }
-                    });
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+//        String url = "http://120.24.160.24/api/history/content/2/1";
+        String url = "http://gank.io/api/history/content/2/1";
+        OkHttpUtils.getInstance().debug(TAG);
+        
+        OkHttpUtils
+                .get()
+                .url(url)
+                .addParams("dong", "dong")
+                .build()
+                .execute(new Callback<GankResponse>() {
+                    @Override
+                    public GankResponse parseNetworkResponse(Response response) throws IOException {
+                        return new Gson().fromJson(response.body().string(),GankResponse.class);
+                    }
 
-                }
-            }
-        }).start();
+                    @Override
+                    public void onBefore(Request request) {
+                        mRefreshLayout.showLoadingView();
+                        mUserInfoAdapter.getDatas().clear();
+                    }
+
+                    @Override
+                    public void onError(Request request, Exception e) {
+                        e.printStackTrace();
+                        mRefreshLayout.showErrorView(AbAppException.getError(e));
+                    }
+
+                    @Override
+                    public void onResponse(GankResponse response) {
+                        Toast.makeText(mContext, "response.Error:" + response.Error, Toast.LENGTH_SHORT).show();
+                        List<UserEntity> list = new ArrayList<UserEntity>();
+                        list.add(new UserEntity("alertSheet1", 23));
+                        list.add(new UserEntity("alertSheet2", 24));
+                        list.add(new UserEntity("iosDialog3", 25));
+                        list.add(new UserEntity("iosDialog4", 23));
+                        list.add(new UserEntity("timepicker", 24));
+                        list.add(new UserEntity("cityPicker", 25));
+                        list.add(new UserEntity("qrcoder1", 25));
+                        list.add(new UserEntity("qrcoder2", 25));
+                        list.add(new UserEntity("FaSingleImageActivity", 25));
+                        list.add(new UserEntity("DoubanLoading", 25));
+                        list.add(new UserEntity("FaPicScanActivity", 25));
+
+                        mRefreshLayout.showContentView();
+//                            mRefreshLayout.showEmptyView();
+//                           
+                        mUserInfoAdapter.clear();
+                        mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
+//                        mRefreshLayout.endRefreshing();
+                    }
+                });
     }
 
     /**
@@ -399,30 +427,39 @@ public class MainActivity extends FaBaseActivity {
             showToast("数据加载完毕");
             return false;
         }
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(3000);
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            List<UserEntity> list = new ArrayList<UserEntity>();
-                            list.add(new UserEntity("cai", 23));
-                            list.add(new UserEntity("10", 24));
-                            list.add(new UserEntity("yoiu", 25));
-                            mUserInfoAdapter.addMoreDatas(list);
+        
+        String url = "http://gank.io/api/history/content/2/1";
+
+        OkHttpUtils
+                .get()
+                .url(url)
+                .addParams("dong", "dong")
+                .build()
+                .execute(new Callback<GankResponse>() {
+                    @Override
+                    public GankResponse parseNetworkResponse(Response response) throws IOException {
+                        return new Gson().fromJson(response.body().string(),GankResponse.class);
+                    }
+
+                    @Override
+                    public void onError(Request request, Exception e) {
+                        e.printStackTrace();
+                        Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onResponse(GankResponse response) {
+                        Toast.makeText(mContext, "response.Error:" + response.Error, Toast.LENGTH_SHORT).show();
+                        List<UserEntity> list = new ArrayList<UserEntity>();
+                        list.add(new UserEntity("cai", 23));
+                        list.add(new UserEntity("10", 24));
+                        list.add(new UserEntity("yoiu", 25));
+                        mUserInfoAdapter.addMoreDatas(list);
 //                            使用第三方的动画框架，不能使用这个
 //                            mUserInfoAdapter.notifyDataSetChanged();
-                            mRefreshLayout.endLoadingMore();
-                        }
-                    });
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-
-                }
-            }
-        }).start();
+                        mRefreshLayout.endLoadingMore();
+                    }
+                });
 
         return true;
     }

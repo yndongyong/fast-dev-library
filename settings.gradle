@@ -1,1 +1,1 @@
-include ':fastdev-library', ':myapplication'
+include ':fastdev-library', ':example'

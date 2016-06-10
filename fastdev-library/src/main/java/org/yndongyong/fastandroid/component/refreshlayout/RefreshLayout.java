@@ -4,16 +4,11 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-import org.yndongyong.fastandroid.R;
 import org.yndongyong.fastandroid.utils.AbLogUtil;
 import org.yndongyong.fastandroid.utils.AbStrUtil;
 
-import cn.bingoogolapple.refreshlayout.BGAMeiTuanRefreshViewHolder;
-import cn.bingoogolapple.refreshlayout.BGAMoocStyleRefreshViewHolder;
-import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import cn.bingoogolapple.refreshlayout.BGARefreshViewHolder;
-import cn.bingoogolapple.refreshlayout.BGAStickinessRefreshViewHolder;
 
 /**
  * 上拉刷新，下拉加载的布局，可以饱和任意子view
@@ -76,18 +71,32 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
 
     public void setDataSource(DataSource dataSource) {
         // TODO: 2016/5/15 更改bga的风格 
-        this.setRefreshViewHolder(new BGANormalRefreshViewHolder(this.mContext, this.isLoadMore));
+//        this.setRefreshViewHolder(new BGANormalRefreshViewHolder(this.mContext, this.isLoadMore));
 //        this.setRefreshViewHolder(new BGAMoocStyleRefreshViewHolder(this.mContext, this.isLoadMore));
 //        this.setRefreshViewHolder(new BGAStickinessRefreshViewHolder(this.mContext, this.isLoadMore));
 //        this.setRefreshViewHolder(new BGAMeiTuanRefreshViewHolder(this.mContext, this.isLoadMore));
-        
+
         this.mDataSource = dataSource;
+    }
+
+    /**
+     * 定义域上啦刷新 ，下拉加载相关的view风格
+     *
+     * @param viewHolder
+     */
+    public void setRefreshViewHolder(BGARefreshViewHolder viewHolder, boolean isLoadMore) {
+        this.setRefreshViewHolder(viewHolder);
+        this.isLoadMore = isLoadMore;
     }
 
     public RefreshLayoutHelper getRefreshLayoutHelper() {
         return this.refreshLayoutHelper;
     }
 
+    /**
+     * 定义加载更多，加载失败的view的风格
+     * @param refreshLayoutHelper
+     */
     public void setRefreshLayoutHelper(RefreshLayoutHelper refreshLayoutHelper) {
         this.refreshLayoutHelper = refreshLayoutHelper;
     }
@@ -107,7 +116,9 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         if (this.mEmptyView != null) {
             this.mEmptyView.setVisibility(View.GONE);
         }
-
+        // TODO: 2016/6/10 dong add  ,之前是填充完数据之后手动调用
+        this.endRefreshing();
+        
     }
 
     public void showEmptyView() {
@@ -130,6 +141,9 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         this.refreshLayoutHelper.getTvMsg().setText(this.refreshLayoutHelper.getEmptyInfoStr());
         this.mEmptyView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
+
+        // TODO: 2016/6/10 dong add  ,之前是填充完数据之后手动调用
+        this.endRefreshing();
     }
 
     public void showErrorView(String errorMsg) {
@@ -152,6 +166,10 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         this.refreshLayoutHelper.getTvMsg().setText(AbStrUtil.isEmpty(errorMsg) ? this.refreshLayoutHelper.getErrorMsg() : errorMsg);
         this.mEmptyView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
+        
+        
+        // TODO: 2016/6/10 dong add  ,之前是填充完数据之后手动调用
+        this.endRefreshing();
     }
 
     public void showLoadingView() {
