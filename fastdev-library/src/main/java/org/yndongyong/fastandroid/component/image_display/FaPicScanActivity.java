@@ -38,6 +38,7 @@ public class FaPicScanActivity extends FaBaseSwipeBackActivity implements Infini
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); // 设置全屏
         this.slBanner = ((SliderLayout) findViewById(R.id.sl_banner));
         this.mToolbar.getBackground().setAlpha(0);
+        
 
 
         this.mLisPics = ((SerializableList) getIntent().getSerializableExtra("EXTRA_IMAGES")).getLis();
@@ -85,7 +86,7 @@ public class FaPicScanActivity extends FaBaseSwipeBackActivity implements Infini
     @Override
     public void onPageSelected(int position) {
         position++;
-//        setTitle(position + "/" + mLisPics.size());
+        setTitle(position + "/" + mLisPics.size());
 //        showToolBar();
     }
 

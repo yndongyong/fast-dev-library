@@ -6,6 +6,7 @@
     <integer name="cpb_default_min_sweep_angle">20</integer>
     <item format="float" name="cpb_default_rotation_speed" type="string">1</item>
     <item format="float" name="cpb_default_sweep_speed" type="string">1</item>
+    
     <style name="Widget.MaterialProgressBar.ProgressBar" parent="android:Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@null</item>
         <item name="android:minWidth">48dp</item>

@@ -1,5 +1,6 @@
 package org.fastandroid.myapplication;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +23,6 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
 import org.yndongyong.fastandroid.component.image_display.FaPicScanActivity;
-import org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity;
 import org.yndongyong.fastandroid.component.image_display.PicScanModel;
 import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
 import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
@@ -40,6 +40,7 @@ import org.yndongyong.fastandroid.view.wheel.city.adapters.AbstractWheelTextAdap
 import org.yndongyong.fastandroid.view.wheel.city.adapters.ArrayWheelAdapter;
 import org.yndongyong.fastandroid.view.wheel.time.TimepickerDialog;
 import org.yndongyong.fastandroid.viewmodel.SerializableList;
+import org.yndongyong.fastandroid.widget.DYProgressHUD;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,7 +48,6 @@ import java.util.List;
 
 import cn.bingoogolapple.androidcommon.adapter.BGAOnItemChildClickListener;
 import cn.bingoogolapple.androidcommon.adapter.BGAOnRVItemClickListener;
-import cn.bingoogolapple.androidcommon.adapter.BGARecyclerViewHolder;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
 import cn.bingoogolapple.refreshlayout.BGARefreshViewHolder;
 import jp.wasabeef.recyclerview.animators.FadeInLeftAnimator;
@@ -78,13 +78,13 @@ public class MainActivity extends FaBaseActivity {
     protected void onRestart() {
         super.onRestart();
         d("onRestart()");
+        
     }
 
     @Override
     protected void onResume() {
         d("onResume()");
         super.onResume();
-
     }
 
     @Override
@@ -132,8 +132,9 @@ public class MainActivity extends FaBaseActivity {
         mRefreshLayout.setErrorImage(R.mipmap.ico_empty);
         BGARefreshViewHolder viewholder = new BGANormalRefreshViewHolder(this, true);
         viewholder.setLoadingMoreText("正在卖力加载...");
-        mRefreshLayout.setRefreshViewHolder(viewholder);
-        
+
+        mRefreshLayout.setRefreshViewHolder(viewholder, true);
+
         mUserInfoAdapter = new UserInfoAdapter(mRecyclerView);
         mUserInfoAdapter.setDatas(userEntities);
 
@@ -272,7 +273,7 @@ public class MainActivity extends FaBaseActivity {
                         readyGoForResult(CaptureSimpleActivity.class, 300);
                         break;
                     case "FaSingleImageActivity":
-                        
+
                         SecondActivity_.intent(MainActivity.this).start();
                         break;
 //                    list.add(new UserEntity("DoubanLoading", 25));
@@ -283,11 +284,11 @@ public class MainActivity extends FaBaseActivity {
                     case "FaPicScanActivity":
                         SerializableList<PicScanModel> imags = new SerializableList<PicScanModel>();
                         List<PicScanModel> list = new ArrayList<PicScanModel>();
-                        PicScanModel picScanModel ;
-                        
+                        PicScanModel picScanModel;
+
                         picScanModel = new PicScanModel();
                         picScanModel.setRemark("第一章图片");
-                        picScanModel.setUrl("http://ww4.sinaimg.cn/mw690/81ded7bagw1f4gxxuyyr9j20c80lzmzl.jpg");
+                        picScanModel.setUrl("http://ww1.sinaimg.cn/mw690/718878b5jw1f4rcmu8tl1j21jk111e6s.jpg");
                         list.add(picScanModel);
 
                         picScanModel = new PicScanModel();
@@ -304,13 +305,13 @@ public class MainActivity extends FaBaseActivity {
                         picScanModel.setRemark("第四章图片");
                         picScanModel.setUrl("http://ww1.sinaimg.cn/mw690/c4ff9961gw1f4gx7xmtprj20j60y3grz.jpg");
                         list.add(picScanModel);
-                        
+
                         imags.setLis(list);
-                        
+
                         Intent intent = new Intent(mContext, FaPicScanActivity.class);
                         intent.putExtra(FaPicScanActivity.EXTRA_CURRENT_INDEX, 0);
                         intent.putExtra(FaPicScanActivity.EXTRA_IMAGES, imags);
-                        readyGo(intent);                
+                        readyGo(intent);
                         break;
                 }
 
@@ -337,10 +338,12 @@ public class MainActivity extends FaBaseActivity {
             }
         });
 
-        
+
         refresh();
     }
 
+    
+   
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -358,6 +361,8 @@ public class MainActivity extends FaBaseActivity {
         }
     }
 
+    Dialog mProgressDialog;
+
     /**
      * 刷新
      */
@@ -365,7 +370,7 @@ public class MainActivity extends FaBaseActivity {
 //        String url = "http://120.24.160.24/api/history/content/2/1";
         String url = "http://gank.io/api/history/content/2/1";
         OkHttpUtils.getInstance().debug(TAG);
-        
+
         OkHttpUtils
                 .get()
                 .url(url)
@@ -374,19 +379,41 @@ public class MainActivity extends FaBaseActivity {
                 .execute(new Callback<GankResponse>() {
                     @Override
                     public GankResponse parseNetworkResponse(Response response) throws IOException {
-                        return new Gson().fromJson(response.body().string(),GankResponse.class);
+                        return new Gson().fromJson(response.body().string(), GankResponse.class);
                     }
 
                     @Override
                     public void onBefore(Request request) {
-                        mRefreshLayout.showLoadingView();
+                        mProgressDialog = DYProgressHUD.createLoading(MainActivity.this,
+                                "loading...");
+                        mProgressDialog.show();
+//                        mRefreshLayout.showLoadingView();
                         mUserInfoAdapter.getDatas().clear();
                     }
 
                     @Override
                     public void onError(Request request, Exception e) {
                         e.printStackTrace();
-                        mRefreshLayout.showErrorView(AbAppException.getError(e));
+//                        mRefreshLayout.showErrorView(AbAppException.getError(e));
+
+                        List<UserEntity> list = new ArrayList<UserEntity>();
+                        list.add(new UserEntity("alertSheet1", 23));
+                        list.add(new UserEntity("alertSheet2", 24));
+                        list.add(new UserEntity("iosDialog3", 25));
+                        list.add(new UserEntity("iosDialog4", 23));
+                        list.add(new UserEntity("timepicker", 24));
+                        list.add(new UserEntity("cityPicker", 25));
+                        list.add(new UserEntity("qrcoder1", 25));
+                        list.add(new UserEntity("qrcoder2", 25));
+                        list.add(new UserEntity("FaSingleImageActivity", 25));
+                        list.add(new UserEntity("DoubanLoading", 25));
+                        list.add(new UserEntity("FaPicScanActivity", 25));
+
+                        mRefreshLayout.showContentView();
+//                            mRefreshLayout.showEmptyView();
+//                           
+                        mUserInfoAdapter.clear();
+                        mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
                     }
 
                     @Override
@@ -412,6 +439,13 @@ public class MainActivity extends FaBaseActivity {
                         mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
 //                        mRefreshLayout.endRefreshing();
                     }
+
+                    @Override
+                    public void onAfter() {
+                        if (mProgressDialog != null && mProgressDialog.isShowing()) {
+                            mProgressDialog.dismiss();
+                        }
+                    }
                 });
     }
 
@@ -427,7 +461,7 @@ public class MainActivity extends FaBaseActivity {
             showToast("数据加载完毕");
             return false;
         }
-        
+
         String url = "http://gank.io/api/history/content/2/1";
 
         OkHttpUtils
@@ -438,7 +472,7 @@ public class MainActivity extends FaBaseActivity {
                 .execute(new Callback<GankResponse>() {
                     @Override
                     public GankResponse parseNetworkResponse(Response response) throws IOException {
-                        return new Gson().fromJson(response.body().string(),GankResponse.class);
+                        return new Gson().fromJson(response.body().string(), GankResponse.class);
                     }
 
                     @Override
@@ -582,12 +616,4 @@ public class MainActivity extends FaBaseActivity {
             return countries[index];
         }
     }
-
-    /**
-     * 用户选择之后的回调
-     */
-    public interface OnCityPickerResultListener {
-        void onResult(String timeStr);
-    }
-
 }

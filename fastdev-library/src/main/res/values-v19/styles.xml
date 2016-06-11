@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 为了使用toolbar-->
+        <item name="android:windowActionBar">false</item>
+        <!-- 使用 API Level 22 编译的话，要拿掉前綴字 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--  为了支持 使用向右滑动返回的-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+
+        <!-- 为了使用沉浸式状态栏-->
+        <item name="android:windowTranslucentStatus">true</item>
+    
+    </style>
+</resources>

@@ -40,40 +40,40 @@ public class FaSingleImageActivity extends FaBaseActivity {
     private SmoothImageView mSmoothImageView;
 
     /**
-     * 
-     * @param act Context
-     * @param loadUrl 要加载的图片 的url
-     * @param loctionX 图片的原始位置 x
+     * @param act       Context
+     * @param loadUrl   要加载的图片 的url
+     * @param loctionX  图片的原始位置 x
      * @param locationY 图片的原始位置 y
-     * @param width 图片的原始宽
-     * @param height 图片的原始高
-     * @param bitmap 要加载的图片 和url 只能二选一
+     * @param width     图片的原始宽
+     * @param height    图片的原始高
+     * @param bitmap    要加载的图片 和url 只能二选一
      */
     public static void actionStart(Context act, String loadUrl, int loctionX, int locationY,
-                                   int width,int height,Bitmap bitmap) {
+                                   int width, int height, Bitmap bitmap) {
         Intent intent = new Intent(act, FaSingleImageActivity.class);
         intent.putExtra(INTENT_IMAGE_URL_TAG, loadUrl);
         intent.putExtra(INTENT_IMAGE_X_TAG, loctionX);
         intent.putExtra(INTENT_IMAGE_Y_TAG, locationY);
         intent.putExtra(INTENT_IMAGE_W_TAG, width);
         intent.putExtra(INTENT_IMAGE_H_TAG, height);
-        intent.putExtra(INTENT_IMAGE_BITMAP_TAG,bitmap);
+        intent.putExtra(INTENT_IMAGE_BITMAP_TAG, bitmap);
         act.startActivity(intent);
     }
 
     /**
      * 从屏幕中心开始缩放
-     * @param act  Context
-     * @param loadUrl  要加载的图片 的url
+     *
+     * @param act     Context
+     * @param loadUrl 要加载的图片 的url
      * @param bitmap
      */
-    public static void actionStart(Context act, String loadUrl,Bitmap bitmap) {
+    public static void actionStart(Context act, String loadUrl, Bitmap bitmap) {
         Intent intent = new Intent(act, FaSingleImageActivity.class);
         intent.putExtra(INTENT_IMAGE_URL_TAG, loadUrl);
-        intent.putExtra(INTENT_IMAGE_BITMAP_TAG,bitmap);
+        intent.putExtra(INTENT_IMAGE_BITMAP_TAG, bitmap);
         act.startActivity(intent);
     }
-    
+
     @Override
     protected int getContentViewLayoutID() {
         return R.layout.activity_images_detail;
@@ -87,7 +87,7 @@ public class FaSingleImageActivity extends FaBaseActivity {
         getbundelExtras(getIntent().getExtras());
         initViewAndEvent();
     }
-    
+
 
     private void getbundelExtras(Bundle bundle) {
         this.mImageUrl = bundle.getString(INTENT_IMAGE_URL_TAG, "");
@@ -117,7 +117,7 @@ public class FaSingleImageActivity extends FaBaseActivity {
             public void onTransformComplete(int mode) {
                 if (mode == SmoothImageView.STATE_TRANSFORM_OUT) {
                     FaSingleImageActivity.this.finish();
-                    FaSingleImageActivity.this.overridePendingTransition(0,0);
+                    FaSingleImageActivity.this.overridePendingTransition(0, 0);
                 }
             }
         });
@@ -132,7 +132,27 @@ public class FaSingleImageActivity extends FaBaseActivity {
                 mSmoothImageView.transformOut();
             }
         });
-        
+        this.mSmoothImageView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+               /* new ActionSheetDialog(FaSingleImageActivity.this)
+                        .builder()
+//                                .setCancelable(false)
+//                                .setCanceledOnTouchOutside(false)
+                        .addSheetItem("保存图片", ActionSheetDialog.SheetItemColor.Blue, new
+                                ActionSheetDialog.OnSheetItemClickListener() {
+                                    @Override
+                                    public void onClick(int which) {
+                                        Toast.makeText(FaSingleImageActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
+                                    }
+                                })
+
+                        .setNegativeButton("取  消", ActionSheetDialog.SheetItemColor.Blue)
+                        .show();*/
+
+                return true;
+            }
+        });
     }
 
     @Override

@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -246,20 +247,14 @@ public abstract class FaBaseActivity extends AppCompatActivity {
      * @param on
      */
     protected void setTranslucentStatus(boolean on) {
-        if (Build.VERSION.SDK_INT >= 19) {
-            Window win = getWindow();
-            WindowManager.LayoutParams winParams = win.getAttributes();
-            final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
-            if (on) {
-                winParams.flags |= bits;
-            } else {
-                winParams.flags &= ~bits;
-            }
-            win.setAttributes(winParams);
-        if (this.mToolbar != null)
-            this.mToolbar.setPadding(0, (int)AbViewUtil.dip2px(this, 22.0F), 0, 0);
-            
+        ViewGroup contentFrameLayout = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+        View parentView = contentFrameLayout.getChildAt(0);
+        if (parentView != null && Build.VERSION.SDK_INT >= 14) {
+            parentView.setFitsSystemWindows(true);
         }
+       /* if (this.mToolbar != null)
+            this.mToolbar.setPadding(0, (int)AbViewUtil.dip2px(this, 22.0F), 0, 0);*/
+
     }
 
     /**

@@ -22,21 +22,23 @@
         </activity>
         <activity
             android:name=".SecondActivity_"
-            android:theme="@style/AppTheme.Default">
+            android:theme="@style/AppTheme.Default"
+            android:label="第二页"
+        >
         </activity>
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity"
-            android:theme="@style/AppTheme.Default"
+            android:theme="@style/AppTheme.Default.ImagesDetail"
             android:label="预览单个图片"
         />
 
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaPicScanActivity"
-            android:theme="@style/AppTheme.Default"
+            android:theme="@style/AppTheme.Default.ImagesDetail"
             android:label="预览多个图片"
         />
         <activity android:name=".ThirdActivity"
-                  android:theme="@style/AppTheme.Default.NoStatusBar">
+                  android:theme="@style/AppTheme.Default.ImagesDetail">
             
         </activity>
     </application>

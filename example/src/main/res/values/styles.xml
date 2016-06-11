@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="@style/Base">
@@ -15,16 +15,19 @@
         <item name="android:textColorPrimary">@color/text_black</item>
         <!--主要字体的选中颜色-->
         <item name="android:textColorPrimaryInverse">@color/text_gray</item>
-        <!-- 不开启这个会导致view的内容跑到status下面去-->
-        <!--<item name="android:fitsSystemWindows">true</item>-->
 
     </style>
+
+    <style name="AppTheme.Default.ImagesDetail">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:statusBarColor" tools:targetApi="21">@color/transparent</item>
+    </style>
+    
     <style name="AppTheme.Default.Start">
         <item name="android:windowIsTranslucent">false</item>
     </style>
 
-    <style name="AppTheme.Default.NoStatusBar">
-        <item name="android:windowNoTitle">true</item>
-    </style>
-    
 </resources>

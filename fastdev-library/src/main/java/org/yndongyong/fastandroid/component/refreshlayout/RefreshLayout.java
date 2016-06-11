@@ -80,7 +80,7 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
     }
 
     /**
-     * 定义域上啦刷新 ，下拉加载相关的view风格
+     * 定义上拉刷新 ，下拉加载相关的view风格
      *
      * @param viewHolder
      */
