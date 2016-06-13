@@ -243,12 +243,12 @@ public class SmoothImageView extends PhotoView {
             }
 
             if (mTransformStart) {
-                Log.d("SmoothImageView", "mTransfrom.startScale:" + mTransfrom.startScale);
-                Log.d("SmoothImageView", "mTransfrom.startScale:" + mTransfrom.endScale);
-                Log.d("SmoothImageView", "mTransfrom.scale:" + mTransfrom.scale);
-                Log.d("SmoothImageView", "mTransfrom.startRect:" + mTransfrom.startRect.toString());
-                Log.d("SmoothImageView", "mTransfrom.endRect:" + mTransfrom.endRect.toString());
-                Log.d("SmoothImageView", "mTransfrom.rect:" + mTransfrom.rect.toString());
+//                Log.d("SmoothImageView", "mTransfrom.startScale:" + mTransfrom.startScale);
+//                Log.d("SmoothImageView", "mTransfrom.startScale:" + mTransfrom.endScale);
+//                Log.d("SmoothImageView", "mTransfrom.scale:" + mTransfrom.scale);
+//                Log.d("SmoothImageView", "mTransfrom.startRect:" + mTransfrom.startRect.toString());
+//                Log.d("SmoothImageView", "mTransfrom.endRect:" + mTransfrom.endRect.toString());
+//                Log.d("SmoothImageView", "mTransfrom.rect:" + mTransfrom.rect.toString());
             }
 
             mPaint.setAlpha(mBgAlpha);
@@ -347,7 +347,7 @@ public class SmoothImageView extends PhotoView {
 
     private TransformListener mTransformListener;
 
-    public static interface TransformListener {
+    public interface TransformListener {
         //mode STATE_TRANSFORM_IN 1 ,STATE_TRANSFORM_OUT 2
         void onTransformComplete(int mode);// mode 1
     }

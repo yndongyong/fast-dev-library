@@ -74,6 +74,9 @@ public class FaPicScanActivity extends FaBaseSwipeBackActivity implements Infini
     @Override
     protected void onDestroy() {
         this.slBanner.stopAutoCycle();
+        if (mToolbar != null) {
+            this.mToolbar.getBackground().setAlpha(255);
+        }
         super.onDestroy();
 
     }
@@ -110,4 +113,5 @@ public class FaPicScanActivity extends FaBaseSwipeBackActivity implements Infini
         animator.setInterpolator(new DecelerateInterpolator());
         animator.start();
     }
+    
 }

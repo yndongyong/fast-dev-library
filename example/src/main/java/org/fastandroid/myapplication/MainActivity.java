@@ -1,9 +1,11 @@
 package org.fastandroid.myapplication;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -28,7 +30,6 @@ import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
 import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
 import org.yndongyong.fastandroid.component.refreshlayout.RefreshLayout;
-import org.yndongyong.fastandroid.global.AbAppException;
 import org.yndongyong.fastandroid.okhttp.OkHttpUtils;
 import org.yndongyong.fastandroid.okhttp.callback.Callback;
 import org.yndongyong.fastandroid.view.dialog.ActionSheetDialog;
@@ -40,7 +41,6 @@ import org.yndongyong.fastandroid.view.wheel.city.adapters.AbstractWheelTextAdap
 import org.yndongyong.fastandroid.view.wheel.city.adapters.ArrayWheelAdapter;
 import org.yndongyong.fastandroid.view.wheel.time.TimepickerDialog;
 import org.yndongyong.fastandroid.viewmodel.SerializableList;
-import org.yndongyong.fastandroid.widget.DYProgressHUD;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -72,39 +72,52 @@ public class MainActivity extends FaBaseActivity {
         setTitle("沉浸式状态栏");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         setDisplayHomeAsUpDisEnabled();
+        
+        d("onCreate() toolbar id:"+mToolbar.getId());
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
         d("onRestart()");
-        
     }
 
     @Override
     protected void onResume() {
         d("onResume()");
         super.onResume();
+        // TODO: 2016/6/13 注册广播监听，恢复onPause方法中释放的资源  
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         d("onPause()");
+        // TODO: 2016/6/13 执行一些释放动画资源，注册的广播等，等的轻量级操作 ，
+        // 断开系统资源链接，一些用户输入的内容保存到内存中
     }
 
     @Override
     protected void onStop() {
-        super.onStop();
         d("onStop()");
-        //使用返回框架，当前层的parentactivity一直处于onPause状态，
-        //
+        super.onStop();
+        //使用返回框架，当前层的parentactivity一直处于Pause状态，
+        // TODO: 2016/6/13 在生命周期中，执行一些重量级的操作，比如数据库存储，sd卡读写
+        //释放一些，连接资源，有时候由于用户的操作，onDestory方法不一定会被调用到
+    }
+
+    ////activity需要被重建时，会执行 
+    // TODO: 2016/6/13 跳转到其他的activity或者是点击Home都会执行 
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        
     }
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         d("onDestroy()");
+        super.onDestroy();
     }
 
     MenuItem menuItem;
@@ -342,8 +355,7 @@ public class MainActivity extends FaBaseActivity {
         refresh();
     }
 
-    
-   
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -384,8 +396,9 @@ public class MainActivity extends FaBaseActivity {
 
                     @Override
                     public void onBefore(Request request) {
-                        mProgressDialog = DYProgressHUD.createLoading(MainActivity.this,
-                                "loading...");
+//                        mProgressDialog = DYProgressHUD.createLoading(MainActivity.this,
+//                                "loading...");
+                        mProgressDialog = ProgressDialog.show(MainActivity.this, null, "loading");
                         mProgressDialog.show();
 //                        mRefreshLayout.showLoadingView();
                         mUserInfoAdapter.getDatas().clear();
