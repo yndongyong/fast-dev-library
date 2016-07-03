@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
       <module fileurl="file://$PROJECT_DIR$/fast-dev-library.iml" filepath="$PROJECT_DIR$/fast-dev-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/fastdev-library/fastdev-library.iml" filepath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example/myapplication.iml" filepath="$PROJECT_DIR$/example/myapplication.iml" />
     </modules>
   </component>
 </project>

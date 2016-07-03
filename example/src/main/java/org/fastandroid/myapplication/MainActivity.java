@@ -26,8 +26,6 @@ import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
 import org.yndongyong.fastandroid.component.image_display.FaPicScanActivity;
 import org.yndongyong.fastandroid.component.image_display.PicScanModel;
-import org.yndongyong.fastandroid.component.qrcode.CaptureActivity;
-import org.yndongyong.fastandroid.component.qrcode.simple.CaptureSimpleActivity;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
 import org.yndongyong.fastandroid.component.refreshlayout.RefreshLayout;
 import org.yndongyong.fastandroid.okhttp.OkHttpUtils;
@@ -280,10 +278,10 @@ public class MainActivity extends FaBaseActivity {
                         dialog1.show();
                         break;
                     case "qrcoder1":
-                        readyGoForResult(CaptureActivity.class, 200);
+//                        readyGoForResult(CaptureActivity.class, 200);
                         break;
                     case "qrcoder2":
-                        readyGoForResult(CaptureSimpleActivity.class, 300);
+//                        readyGoForResult(CaptureSimpleActivity.class, 300);
                         break;
                     case "FaSingleImageActivity":
 
