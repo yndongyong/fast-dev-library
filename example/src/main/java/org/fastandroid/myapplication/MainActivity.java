@@ -28,8 +28,7 @@ import org.yndongyong.fastandroid.component.image_display.FaPicScanActivity;
 import org.yndongyong.fastandroid.component.image_display.PicScanModel;
 import org.yndongyong.fastandroid.component.refreshlayout.DataSource;
 import org.yndongyong.fastandroid.component.refreshlayout.RefreshLayout;
-import org.yndongyong.fastandroid.okhttp.OkHttpUtils;
-import org.yndongyong.fastandroid.okhttp.callback.Callback;
+import org.yndongyong.fastandroid.net.HttpUtils;
 import org.yndongyong.fastandroid.view.dialog.ActionSheetDialog;
 import org.yndongyong.fastandroid.view.dialog.IosDialog;
 import org.yndongyong.fastandroid.view.wheel.city.AddressData;
@@ -379,85 +378,64 @@ public class MainActivity extends FaBaseActivity {
     private void refresh() {
 //        String url = "http://120.24.160.24/api/history/content/2/1";
         String url = "http://gank.io/api/history/content/2/1";
-        OkHttpUtils.getInstance().debug(TAG);
 
-        OkHttpUtils
-                .get()
-                .url(url)
-                .addParams("dong", "dong")
-                .build()
-                .execute(new Callback<GankResponse>() {
-                    @Override
-                    public GankResponse parseNetworkResponse(Response response) throws IOException {
-                        return new Gson().fromJson(response.body().string(), GankResponse.class);
-                    }
-
-                    @Override
-                    public void onBefore(Request request) {
-//                        mProgressDialog = DYProgressHUD.createLoading(MainActivity.this,
-//                                "loading...");
-                        mProgressDialog = ProgressDialog.show(MainActivity.this, null, "loading");
-                        mProgressDialog.show();
+        mProgressDialog = ProgressDialog.show(MainActivity.this, null, "loading");
+        mProgressDialog.show();
 //                        mRefreshLayout.showLoadingView();
-                        mUserInfoAdapter.getDatas().clear();
-                    }
+        mUserInfoAdapter.getDatas().clear();
+        
+        HttpUtils.doGetAsyn(url, new HttpUtils.CallBack() {
+            @Override
+            public void onRequestComplete(String result) {
+                GankResponse gankResponse = new Gson().fromJson(result, GankResponse.class);
+                Toast.makeText(mContext, "response.Error:" + gankResponse.Error, Toast.LENGTH_SHORT).show();
+                List<UserEntity> list = new ArrayList<UserEntity>();
+                list.add(new UserEntity("alertSheet1", 23));
+                list.add(new UserEntity("alertSheet2", 24));
+                list.add(new UserEntity("iosDialog3", 25));
+                list.add(new UserEntity("iosDialog4", 23));
+                list.add(new UserEntity("timepicker", 24));
+                list.add(new UserEntity("cityPicker", 25));
+                list.add(new UserEntity("qrcoder1", 25));
+                list.add(new UserEntity("qrcoder2", 25));
+                list.add(new UserEntity("FaSingleImageActivity", 25));
+                list.add(new UserEntity("DoubanLoading", 25));
+                list.add(new UserEntity("FaPicScanActivity", 25));
 
-                    @Override
-                    public void onError(Request request, Exception e) {
-                        e.printStackTrace();
+                mRefreshLayout.showContentView();
+//                            mRefreshLayout.showEmptyView();
+//                           
+                mUserInfoAdapter.clear();
+                mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
+//                        mRefreshLayout.endRefreshing();
+            }
+
+            @Override
+            public void onRequestError(Exception exception, String error) {
+                exception.printStackTrace();
 //                        mRefreshLayout.showErrorView(AbAppException.getError(e));
 
-                        List<UserEntity> list = new ArrayList<UserEntity>();
-                        list.add(new UserEntity("alertSheet1", 23));
-                        list.add(new UserEntity("alertSheet2", 24));
-                        list.add(new UserEntity("iosDialog3", 25));
-                        list.add(new UserEntity("iosDialog4", 23));
-                        list.add(new UserEntity("timepicker", 24));
-                        list.add(new UserEntity("cityPicker", 25));
-                        list.add(new UserEntity("qrcoder1", 25));
-                        list.add(new UserEntity("qrcoder2", 25));
-                        list.add(new UserEntity("FaSingleImageActivity", 25));
-                        list.add(new UserEntity("DoubanLoading", 25));
-                        list.add(new UserEntity("FaPicScanActivity", 25));
+                List<UserEntity> list = new ArrayList<UserEntity>();
+                list.add(new UserEntity("alertSheet1", 23));
+                list.add(new UserEntity("alertSheet2", 24));
+                list.add(new UserEntity("iosDialog3", 25));
+                list.add(new UserEntity("iosDialog4", 23));
+                list.add(new UserEntity("timepicker", 24));
+                list.add(new UserEntity("cityPicker", 25));
+                list.add(new UserEntity("qrcoder1", 25));
+                list.add(new UserEntity("qrcoder2", 25));
+                list.add(new UserEntity("FaSingleImageActivity", 25));
+                list.add(new UserEntity("DoubanLoading", 25));
+                list.add(new UserEntity("FaPicScanActivity", 25));
 
-                        mRefreshLayout.showContentView();
+                mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
 //                           
-                        mUserInfoAdapter.clear();
-                        mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
-                    }
+                mUserInfoAdapter.clear();
+                mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
 
-                    @Override
-                    public void onResponse(GankResponse response) {
-                        Toast.makeText(mContext, "response.Error:" + response.Error, Toast.LENGTH_SHORT).show();
-                        List<UserEntity> list = new ArrayList<UserEntity>();
-                        list.add(new UserEntity("alertSheet1", 23));
-                        list.add(new UserEntity("alertSheet2", 24));
-                        list.add(new UserEntity("iosDialog3", 25));
-                        list.add(new UserEntity("iosDialog4", 23));
-                        list.add(new UserEntity("timepicker", 24));
-                        list.add(new UserEntity("cityPicker", 25));
-                        list.add(new UserEntity("qrcoder1", 25));
-                        list.add(new UserEntity("qrcoder2", 25));
-                        list.add(new UserEntity("FaSingleImageActivity", 25));
-                        list.add(new UserEntity("DoubanLoading", 25));
-                        list.add(new UserEntity("FaPicScanActivity", 25));
-
-                        mRefreshLayout.showContentView();
-//                            mRefreshLayout.showEmptyView();
-//                           
-                        mUserInfoAdapter.clear();
-                        mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
-//                        mRefreshLayout.endRefreshing();
-                    }
-
-                    @Override
-                    public void onAfter() {
-                        if (mProgressDialog != null && mProgressDialog.isShowing()) {
-                            mProgressDialog.dismiss();
-                        }
-                    }
-                });
+            }
+        });
     }
 
     /**
@@ -475,37 +453,28 @@ public class MainActivity extends FaBaseActivity {
 
         String url = "http://gank.io/api/history/content/2/1";
 
-        OkHttpUtils
-                .get()
-                .url(url)
-                .addParams("dong", "dong")
-                .build()
-                .execute(new Callback<GankResponse>() {
-                    @Override
-                    public GankResponse parseNetworkResponse(Response response) throws IOException {
-                        return new Gson().fromJson(response.body().string(), GankResponse.class);
-                    }
-
-                    @Override
-                    public void onError(Request request, Exception e) {
-                        e.printStackTrace();
-                        Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onResponse(GankResponse response) {
-                        Toast.makeText(mContext, "response.Error:" + response.Error, Toast.LENGTH_SHORT).show();
-                        List<UserEntity> list = new ArrayList<UserEntity>();
-                        list.add(new UserEntity("cai", 23));
-                        list.add(new UserEntity("10", 24));
-                        list.add(new UserEntity("yoiu", 25));
-                        mUserInfoAdapter.addMoreDatas(list);
+        HttpUtils.doGetAsyn(url, new HttpUtils.CallBack() {
+            @Override
+            public void onRequestComplete(String result) {
+                GankResponse response = new Gson().fromJson(result, GankResponse.class);
+                Toast.makeText(mContext, "response.Error:" + response.Error, Toast.LENGTH_SHORT).show();
+                List<UserEntity> list = new ArrayList<UserEntity>();
+                list.add(new UserEntity("cai", 23));
+                list.add(new UserEntity("10", 24));
+                list.add(new UserEntity("yoiu", 25));
+                mUserInfoAdapter.addMoreDatas(list);
 //                            使用第三方的动画框架，不能使用这个
 //                            mUserInfoAdapter.notifyDataSetChanged();
-                        mRefreshLayout.endLoadingMore();
-                    }
-                });
+                mRefreshLayout.endLoadingMore();
+            }
 
+            @Override
+            public void onRequestError(Exception exception, String error) {
+                exception.printStackTrace();
+                Toast.makeText(mContext, exception.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        
         return true;
     }
 

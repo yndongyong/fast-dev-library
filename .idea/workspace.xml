@@ -6,81 +6,47 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d950d3-e888-4c4d-8144-f3129a280526" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CameraActivityHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/CaptureActivityHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/ResultActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/AutoFocusManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraConfigurationManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraConfigurationUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/CameraManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/PreviewCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/camera/open/OpenCameraInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeFormatManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeThread.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/decode/DecodeUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/AutoFocusManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraActivityHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraConfigurationManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CameraManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/CaptureSimpleActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/DecodeHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/DecodeThread.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/simple/PreviewCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/BeepManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/Constants.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/qrcode/utils/InactivityTimer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/arm64-v8a/libRSSupport.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/arm64-v8a/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/arm64-v8a/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/arm64-v8a/librsjni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi-v7a/libRSSupport.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi-v7a/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi-v7a/libblasV8.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi-v7a/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi-v7a/librsjni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi/libbspatch.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/armeabi/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips/libRSSupport.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips/libblasV8.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips/librsjni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips64/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/mips64/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86/libRSSupport.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86/libblasV8.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86/librsjni.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86_64/libZBarDecoder.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/jniLibs/x86_64/libiconv.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable/barcode_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable/camera_bg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable/light_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable/qrcode_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/drawable/result_content_bg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_capture.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_capture_simple.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_result.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/net/HttpUtils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/OkHttpUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/builder/GetBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/builder/OkHttpRequestBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/builder/PostFileBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/builder/PostFormBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/builder/PostStringBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/callback/BitmapCallback.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/callback/Callback.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/callback/FileCallBack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/callback/StringCallback.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/cookie/PersistentCookieStore.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/cookie/SerializableHttpCookie.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/download/DownLoadInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/download/DownLoadManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/download/DownloadService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/https/HttpsUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/CountingRequestBody.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/GetRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/OkHttpRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/PostFileRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/PostFormRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/PostStringRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/request/RequestCall.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/upload/UploadInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/upload/UploadManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/upload/UploadService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/utils/DowanloadUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/utils/Exceptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/utils/ImageUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/utils/L.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/utils/UploadUtil.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fast-dev-library.iml" afterPath="$PROJECT_DIR$/fast-dev-library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/.gitignore" afterPath="$PROJECT_DIR$/fastdev-library/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" afterPath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml" />
     </list>
     <ignored path="fast-dev-library.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,15 +67,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8909091">
-              <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="386" column="24" selection-start-line="386" selection-start-column="18" selection-end-line="386" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2446#2447#0" expanded="true" />
-                <element signature="e#2491#2492#0" expanded="true" />
+                <element signature="e#2381#2382#0" expanded="true" />
+                <element signature="e#2426#2427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecondActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.5">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/net/HttpUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33213645">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2836,7 +2844,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/okhttp/https/HttpsUtils.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/net/HttpUtils.java" />
         <option value="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
+        <option value="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2853,7 +2865,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -2961,7 +2973,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
+              <option name="myItemId" value="net" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2973,6 +2985,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="fastdev-library" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -3016,10 +3032,6 @@
               <option name="myItemId" value="example" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3031,22 +3043,8 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapplication" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast-dev-library" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="example" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -3061,6 +3059,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="bae03462" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\studio_workspace\fast-dev-library\fastdev-library\src\main\java\org\yndongyong\fastandroid\net" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.example">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -3337,24 +3340,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.60590017" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38737202" sideWeight="0.31770045" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16211604" sideWeight="0.31770045" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26450512" sideWeight="0.8676248" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38737202" sideWeight="0.68229955" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46928328" sideWeight="0.68229955" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.668942" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5221843" sideWeight="0.1323752" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3373,8 +3376,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12116041" sideWeight="0.3139183" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16211604" sideWeight="0.31770045" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26450512" sideWeight="0.8676248" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -3383,17 +3386,17 @@
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.60590017" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12116041" sideWeight="0.6860817" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46928328" sideWeight="0.68229955" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.668942" sideWeight="0.5030257" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26450512" sideWeight="0.1323752" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -3407,14 +3410,58 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/example/src/main/res/mipmap-xhdpi/ico_empty.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/main/res/mipmap-xhdpi/ico_shake.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8909091">
-          <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="386" column="24" selection-start-line="386" selection-start-column="18" selection-end-line="386" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/net/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33213645">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

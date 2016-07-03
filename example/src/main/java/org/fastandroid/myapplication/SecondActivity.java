@@ -4,15 +4,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.google.gson.Gson;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -20,11 +16,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseSwipeBackActivity;
 import org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity;
-import org.yndongyong.fastandroid.okhttp.OkHttpUtils;
-import org.yndongyong.fastandroid.okhttp.callback.Callback;
 import org.yndongyong.fastandroid.view.RecyclerImageView;
-
-import java.io.IOException;
 
 /**
  * Created by Dong on 2016/5/15.
