@@ -49,17 +49,16 @@ dependencies {
     /*gson*/
     compile 'com.google.code.gson:gson:2.6.2'
     // refreshlayout 记得添加nineoldandroids
-    compile 'cn.bingoogolapple:bga-refreshlayout:latestVersion@aar'
     compile 'com.nineoldandroids:library:2.4.0'
     /*https://github.com/AndreiD/TSnackBar*/
     compile 'com.androidadvance:topsnackbar:0.0.9'
     /*https://github.com/bumptech/glide*/
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //OkHttp 2.x 使用okhhtp支持glide
-    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0@aar'
-    compile 'com.squareup.okhttp:okhttp:2.7.5'
-    compile files('libs/zxing-4.7.3.jar')
-    compile files('libs/ZBarDecoder.jar')
+//    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0@aar'
+//    compile 'com.squareup.okhttp:okhttp:2.7.5'
+//    compile files('libs/zxing-4.7.3.jar')
+//    compile files('libs/ZBarDecoder.jar')
     //ptotoview
     compile 'com.github.chrisbanes:PhotoView:1.2.6'
 }

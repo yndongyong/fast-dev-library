@@ -1,13 +1,15 @@
 package org.fastandroid.myapplication;
 
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.PersistableBundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,8 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -39,7 +39,6 @@ import org.yndongyong.fastandroid.view.wheel.city.adapters.ArrayWheelAdapter;
 import org.yndongyong.fastandroid.view.wheel.time.TimepickerDialog;
 import org.yndongyong.fastandroid.viewmodel.SerializableList;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,6 +50,8 @@ import jp.wasabeef.recyclerview.animators.FadeInLeftAnimator;
 
 @EActivity
 public class MainActivity extends FaBaseActivity {
+
+    private Handler _handler = new Handler(Looper.getMainLooper());
 
     private String cityTxt;
 
@@ -69,8 +70,8 @@ public class MainActivity extends FaBaseActivity {
         setTitle("沉浸式状态栏");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         setDisplayHomeAsUpDisEnabled();
-        
-        d("onCreate() toolbar id:"+mToolbar.getId());
+
+        d("onCreate() toolbar id:" + mToolbar.getId());
     }
 
     @Override
@@ -108,7 +109,7 @@ public class MainActivity extends FaBaseActivity {
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
-        
+
     }
 
     @Override
@@ -379,61 +380,73 @@ public class MainActivity extends FaBaseActivity {
 //        String url = "http://120.24.160.24/api/history/content/2/1";
         String url = "http://gank.io/api/history/content/2/1";
 
-        mProgressDialog = ProgressDialog.show(MainActivity.this, null, "loading");
-        mProgressDialog.show();
-//                        mRefreshLayout.showLoadingView();
+//        mProgressDialog = ProgressDialog.show(MainActivity.this, null, "loading");
+        mRefreshLayout.showLoadingView();
         mUserInfoAdapter.getDatas().clear();
-        
+
         HttpUtils.doGetAsyn(url, new HttpUtils.CallBack() {
             @Override
-            public void onRequestComplete(String result) {
-                GankResponse gankResponse = new Gson().fromJson(result, GankResponse.class);
-                Toast.makeText(mContext, "response.Error:" + gankResponse.Error, Toast.LENGTH_SHORT).show();
-                List<UserEntity> list = new ArrayList<UserEntity>();
-                list.add(new UserEntity("alertSheet1", 23));
-                list.add(new UserEntity("alertSheet2", 24));
-                list.add(new UserEntity("iosDialog3", 25));
-                list.add(new UserEntity("iosDialog4", 23));
-                list.add(new UserEntity("timepicker", 24));
-                list.add(new UserEntity("cityPicker", 25));
-                list.add(new UserEntity("qrcoder1", 25));
-                list.add(new UserEntity("qrcoder2", 25));
-                list.add(new UserEntity("FaSingleImageActivity", 25));
-                list.add(new UserEntity("DoubanLoading", 25));
-                list.add(new UserEntity("FaPicScanActivity", 25));
+            public void onRequestComplete(final String result) {
+                final GankResponse gankResponse = new Gson().fromJson(result, GankResponse.class);
+                _handler.post(new Runnable() {
+                    @Override
+                    public void run() {
 
-                mRefreshLayout.showContentView();
+                        Toast.makeText(mContext, "response.Error:" + gankResponse.Error, Toast.LENGTH_SHORT).show();
+                        List<UserEntity> list = new ArrayList<UserEntity>();
+                        list.add(new UserEntity("alertSheet1", 23));
+                        list.add(new UserEntity("alertSheet2", 24));
+                        list.add(new UserEntity("iosDialog3", 25));
+                        list.add(new UserEntity("iosDialog4", 23));
+                        list.add(new UserEntity("timepicker", 24));
+                        list.add(new UserEntity("cityPicker", 25));
+                        list.add(new UserEntity("qrcoder1", 25));
+                        list.add(new UserEntity("qrcoder2", 25));
+                        list.add(new UserEntity("FaSingleImageActivity", 25));
+                        list.add(new UserEntity("DoubanLoading", 25));
+                        list.add(new UserEntity("FaPicScanActivity", 25));
+
+                        mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
 //                           
-                mUserInfoAdapter.clear();
-                mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
+                        mUserInfoAdapter.clear();
+                        mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
 //                        mRefreshLayout.endRefreshing();
+                    }
+                });
+
             }
 
             @Override
-            public void onRequestError(Exception exception, String error) {
+            public void onRequestError(Exception exception, final String error) {
                 exception.printStackTrace();
 //                        mRefreshLayout.showErrorView(AbAppException.getError(e));
 
-                List<UserEntity> list = new ArrayList<UserEntity>();
-                list.add(new UserEntity("alertSheet1", 23));
-                list.add(new UserEntity("alertSheet2", 24));
-                list.add(new UserEntity("iosDialog3", 25));
-                list.add(new UserEntity("iosDialog4", 23));
-                list.add(new UserEntity("timepicker", 24));
-                list.add(new UserEntity("cityPicker", 25));
-                list.add(new UserEntity("qrcoder1", 25));
-                list.add(new UserEntity("qrcoder2", 25));
-                list.add(new UserEntity("FaSingleImageActivity", 25));
-                list.add(new UserEntity("DoubanLoading", 25));
-                list.add(new UserEntity("FaPicScanActivity", 25));
-
-                mRefreshLayout.showContentView();
-//                            mRefreshLayout.showEmptyView();
-//                           
-                mUserInfoAdapter.clear();
-                mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
-
+                _handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+//                        mRefreshLayout.showEmptyView();
+                        mRefreshLayout.showErrorView(error);
+                        
+                        
+//                        List<UserEntity> list = new ArrayList<UserEntity>();
+//                        list.add(new UserEntity("alertSheet1", 23));
+//                        list.add(new UserEntity("alertSheet2", 24));
+//                        list.add(new UserEntity("iosDialog3", 25));
+//                        list.add(new UserEntity("iosDialog4", 23));
+//                        list.add(new UserEntity("timepicker", 24));
+//                        list.add(new UserEntity("cityPicker", 25));
+//                        list.add(new UserEntity("qrcoder1", 25));
+//                        list.add(new UserEntity("qrcoder2", 25));
+//                        list.add(new UserEntity("FaSingleImageActivity", 25));
+//                        list.add(new UserEntity("DoubanLoading", 25));
+//                        list.add(new UserEntity("FaPicScanActivity", 25));
+//
+//                        mRefreshLayout.showContentView();
+//                        mUserInfoAdapter.clear();
+//                        mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
+                    }
+                });
             }
         });
     }
@@ -456,6 +469,7 @@ public class MainActivity extends FaBaseActivity {
         HttpUtils.doGetAsyn(url, new HttpUtils.CallBack() {
             @Override
             public void onRequestComplete(String result) {
+                Log.d(TAG, "onRequestComplete:" + result);
                 GankResponse response = new Gson().fromJson(result, GankResponse.class);
                 Toast.makeText(mContext, "response.Error:" + response.Error, Toast.LENGTH_SHORT).show();
                 List<UserEntity> list = new ArrayList<UserEntity>();
@@ -470,11 +484,12 @@ public class MainActivity extends FaBaseActivity {
 
             @Override
             public void onRequestError(Exception exception, String error) {
+                Log.e(TAG, "onRequestError:" + error);
                 exception.printStackTrace();
                 Toast.makeText(mContext, exception.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-        
+
         return true;
     }
 

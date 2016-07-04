@@ -1,6 +1,9 @@
 package org.yndongyong.fastandroid.net;
 
+import android.text.TextUtils;
 import android.util.Log;
+
+import org.yndongyong.fastandroid.executor.BackgroundExecutors;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -20,7 +23,7 @@ public class HttpUtils {
 
     public interface CallBack {
         void onRequestComplete(String result);
-        
+
         void onRequestError(Exception exception, String error);
     }
 
@@ -32,23 +35,27 @@ public class HttpUtils {
      * @param callBack
      */
     public static void doGetAsyn(final String urlStr, final CallBack callBack) {
-        Log.d("HttpUtils",urlStr);
-        new Thread() {
+
+        BackgroundExecutors.getInstance().submit(new Runnable() {
+            @Override
             public void run() {
                 try {
                     String result = doGet(urlStr);
                     if (callBack != null) {
-                        callBack.onRequestComplete(result);
+                        if (!TextUtils.isEmpty(result))
+                            callBack.onRequestComplete(result);
+                        else
+                            callBack.onRequestError(new NullPointerException("result can not be empty!"),
+                                    "数据获取失败!");
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
                     if (callBack != null) {
-                        callBack.onRequestError(e,e.getMessage());
+                        callBack.onRequestError(e, e.getMessage());
                     }
                 }
-
             }
-        }.start();
+        });
     }
 
     /**
@@ -61,22 +68,27 @@ public class HttpUtils {
      */
     public static void doPostAsyn(final String urlStr, final String params,
                                   final CallBack callBack) throws Exception {
-        new Thread() {
+        BackgroundExecutors.getInstance().submit(new Runnable() {
+
+            @Override
             public void run() {
                 try {
                     String result = doPost(urlStr, params);
                     if (callBack != null) {
-                        callBack.onRequestComplete(result);
+                        if (!TextUtils.isEmpty(result))
+                            callBack.onRequestComplete(result);
+                        else
+                            callBack.onRequestError(new NullPointerException("result can not be empty!"),
+                                    "result can not be empty!");
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
                     if (callBack != null) {
-                        callBack.onRequestError(e,e.getMessage());
+                        callBack.onRequestError(e, e.getMessage());
                     }
                 }
-
             }
-        }.start();
+        });
     }
 
     /**
@@ -87,6 +99,7 @@ public class HttpUtils {
      * @throws Exception
      */
     public static String doGet(String urlStr) {
+        Log.d("HttpUtils GET:", urlStr);
         URL url = null;
         HttpURLConnection conn = null;
         InputStream is = null;
@@ -143,6 +156,7 @@ public class HttpUtils {
      * @throws Exception
      */
     public static String doPost(String url, String param) {
+        Log.d("HttpUtils POST:", url);
         PrintWriter out = null;
         BufferedReader in = null;
         String result = "";
