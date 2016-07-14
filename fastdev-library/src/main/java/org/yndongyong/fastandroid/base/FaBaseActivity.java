@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.ColorRes;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -157,6 +158,17 @@ public abstract class FaBaseActivity extends AppCompatActivity {
             this.tvTitle.setText(title);
         } else {
             this.mToolbar.setTitle(title);
+        }
+    }
+
+    /**
+     * 为居中的标题设置文本颜色，字号
+     * @param color
+     */
+    protected void setTitleStyle(int color,int unit,float size) {
+        if (this.tvTitle != null) {
+            this.tvTitle.setTextColor(color );
+            this.tvTitle.setTextSize(unit,size);
         }
     }
 
