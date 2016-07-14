@@ -144,7 +144,6 @@ public final class AbGraphicUtil {
       * 
       * 描述：获取这段文本多少行.
       * @param text
-      * @param textSize
       * @param maxWPix
       * @return
       */

@@ -29,13 +29,11 @@ import org.yndongyong.fastandroid.R;
  *  .setView(timepickerview1)
  * .setNegativeButton("取消", new View.OnClickListener() {
  *
- * @Override 
  * public void onResult(View v) {
- * <p/>
+ * <p>
  * }
  * });
  * dialog.setPositiveButton("保存", new View.OnClickListener() {
- * @Override 
  * public void onResult(View v) {
  *      Toast.makeText(MainActivity.this, "test", Toast.LENGTH_SHORT).show();
  * }

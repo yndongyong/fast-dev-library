@@ -18,29 +18,28 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
         <activity
             android:name=".SecondActivity_"
-            android:theme="@style/AppTheme.Default"
             android:label="第二页"
-        >
+            android:theme="@style/AppTheme.Default">
         </activity>
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity"
-            android:theme="@style/AppTheme.Default.ImagesDetail"
             android:label="预览单个图片"
-        />
-
+            android:theme="@style/AppTheme.Default.ImagesDetail"/>
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaPicScanActivity"
-            android:theme="@style/AppTheme.Default.ImagesDetail"
             android:label="预览多个图片"
-        />
-        <activity android:name=".ThirdActivity"
-                  android:theme="@style/AppTheme.Default.ImagesDetail">
+            android:theme="@style/AppTheme.Default.ImagesDetail"/>
+        <activity
+            android:name=".ThirdActivity"
+            android:theme="@style/AppTheme.Default.ImagesDetail">
+        </activity>
+        <activity android:name=".EditTextTestActivity">
             
         </activity>
+        <activity android:name=".EditTextTestActivity_"/>
     </application>
 
 </manifest>

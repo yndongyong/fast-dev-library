@@ -2,6 +2,8 @@ package org.yndongyong.fastandroid.component.slider.Animations;
 
 import android.view.View;
 
+import org.yndongyong.fastandroid.component.slider.Tricks.ViewPagerEx;
+
 /**
  * This interface gives you chance to inject your own animation or do something when the
  * {@link ViewPagerEx} animation (PagerTransformer) starts or ends.

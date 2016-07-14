@@ -184,8 +184,7 @@ public class AbAppUtil {
 	
 	/**
 	 * Gps是否打开
-	 * 需要<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />权限
-	 *
+]	 * 需要android.permission.ACCESS_FINE_LOCATION权限
 	 * @param context the context
 	 * @return true, if is gps enabled
 	 */

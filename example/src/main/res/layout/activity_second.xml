@@ -33,23 +33,23 @@
 
     />
     
-    <org.yndongyong.fastandroid.view.RecyclerImageView
+    <org.yndongyong.fastandroid.image.RecyclerImageView
         android:id="@+id/head"
         android:layout_width="54dp"
         android:layout_height="54dp"
         
     />
-    <org.yndongyong.fastandroid.view.RecyclerImageView
+    <org.yndongyong.fastandroid.image.RecyclerImageView
         android:id="@+id/head2"
         android:layout_margin="100dp"
-        android:layout_width="80dp"
+        android:layout_width="90dp"
         android:layout_height="80dp"
 
     />
-    <org.yndongyong.fastandroid.view.RecyclerImageView
+    <org.yndongyong.fastandroid.image.RecyclerImageView
         android:layout_marginLeft="250dp"
         android:id="@+id/head3"
-        android:layout_width="80dp"
+        android:layout_width="90dp"
         android:layout_height="80dp"
 
     />

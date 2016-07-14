@@ -16,7 +16,9 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.yndongyong.fastandroid.base.FaBaseSwipeBackActivity;
 import org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity;
-import org.yndongyong.fastandroid.view.RecyclerImageView;
+import org.yndongyong.fastandroid.image.GlideCircleTransform;
+import org.yndongyong.fastandroid.image.GlideRoundTransform;
+import org.yndongyong.fastandroid.image.RecyclerImageView;
 
 /**
  * Created by Dong on 2016/5/15.
@@ -112,12 +114,9 @@ public class SecondActivity extends FaBaseSwipeBackActivity {
 //                .diskCacheStrategy(DiskCacheStrategy.RESULT)//缓存裁剪过后的图片
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)//缓存原始大小和裁剪过后的图片
                 .centerCrop()//进行裁剪到目标大小，然后居中
+//                .bitmapTransform(new GlideRoundTransform(this,8))
 //                .fitCenter()//整个图都缩小显示
                 .into(head3);
-
-
-        
-
     }
 
     @Click(R.id.head)

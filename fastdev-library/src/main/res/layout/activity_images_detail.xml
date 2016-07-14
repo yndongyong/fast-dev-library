@@ -5,7 +5,7 @@
               android:background="@android:color/transparent"
               android:orientation="vertical"
 >
-    <org.yndongyong.fastandroid.view.SmoothImageView
+    <org.yndongyong.fastandroid.image.SmoothImageView
         android:id="@+id/images_detail_smooth_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

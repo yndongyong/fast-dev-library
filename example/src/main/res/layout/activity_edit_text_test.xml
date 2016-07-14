@@ -3,11 +3,57 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:background="@drawable/edit_input_bg"
     tools:context="org.fastandroid.myapplication.EditTextTestActivity">
+
+
+    <EditText
+        android:id="@+id/et_leave_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginBottom="0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="top|left"
+        android:hint="@string/app_name"
+        android:inputType="textLongMessage|textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+        android:isScrollContainer="false"
+        android:minHeight="24dip"
+        android:minLines="9"
+        android:paddingLeft="8dip"
+        android:paddingTop="8dip"
+        android:paddingRight="8dip"
+        android:paddingBottom="0dip"
+        android:background="@null"
+        android:textColorHint="@color/alpha_35_black"
+        android:textSize="16sp"
+    >
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_leave_count"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="0/200"
+        android:textColor="@color/alpha_35_black"
+        android:textSize="@dimen/text_h3"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dip"
+        android:layout_marginBottom="4dip"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_leave_input"
+    />
 
 </RelativeLayout>

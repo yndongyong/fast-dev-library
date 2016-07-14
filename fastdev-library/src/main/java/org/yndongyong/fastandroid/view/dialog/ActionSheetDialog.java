@@ -32,13 +32,13 @@ import java.util.List;
  * .addSheetItem("item 1", ActionSheetDialog.SheetItemColor.Blue, new
  * ActionSheetDialog.OnSheetItemClickListener() {
  *
- * @Override public void onResult(int which) {
+ * public void onResult(int which) {
  * Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
  * }
  * })
  * .addSheetItem("item 2", ActionSheetDialog.SheetItemColor.Blue, new
  * ActionSheetDialog.OnSheetItemClickListener() {
- * @Override public void onResult(int which) {
+ *  public void onResult(int which) {
  * Toast.makeText(MainActivity.this, "你点了 " + which + " ", Toast.LENGTH_SHORT).show();
  * }
  * })

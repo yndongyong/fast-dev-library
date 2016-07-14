@@ -171,7 +171,6 @@ public class AbLogUtil {
 	/**
 	 * 描述：打印这次的执行时间毫秒，需要首先调用prepareLog().
 	 *
-	 * @param tag 标记
 	 * @param message 描述
 	 * @param printTime 是否打印时间
 	 */
@@ -228,7 +227,6 @@ public class AbLogUtil {
 	
 	/**
 	 * 打开所有日志，默认全打开
-	 * @param d
 	 */
 	public static void openAll() {
 		D  = true;
@@ -238,7 +236,6 @@ public class AbLogUtil {
 	
 	/**
 	 * 关闭所有日志
-	 * @param d
 	 */
 	public static void closeAll() {
 		D  = false;

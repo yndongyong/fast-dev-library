@@ -466,4 +466,6 @@ public abstract class FaBaseActivity extends AppCompatActivity {
         private TransitionMode() {
         }
     }
+    // TODO: 2016/7/14 UI适配相关 
+    
 }

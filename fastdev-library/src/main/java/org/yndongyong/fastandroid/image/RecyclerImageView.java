@@ -1,4 +1,4 @@
-package org.yndongyong.fastandroid.view;
+package org.yndongyong.fastandroid.image;
 
 import android.content.Context;
 import android.util.AttributeSet;

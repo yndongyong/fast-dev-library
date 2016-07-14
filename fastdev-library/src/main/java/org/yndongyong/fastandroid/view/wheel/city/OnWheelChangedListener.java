@@ -3,8 +3,8 @@ package org.yndongyong.fastandroid.view.wheel.city;
 /**
  * Wheel changed listener interface.
  * <p>The onChanged() method is called whenever current wheel positions is changed:
- * <li> New Wheel position is set
- * <li> Wheel view is scrolled
+ *  New Wheel position is set
+ *  Wheel view is scrolled
  */
 public interface OnWheelChangedListener {
 	/**

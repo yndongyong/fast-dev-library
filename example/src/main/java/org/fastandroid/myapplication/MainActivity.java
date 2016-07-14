@@ -324,6 +324,9 @@ public class MainActivity extends FaBaseActivity {
                         intent.putExtra(FaPicScanActivity.EXTRA_IMAGES, imags);
                         readyGo(intent);
                         break;
+                    case "EditText":
+                        EditTextTestActivity_.intent(mContext).start();
+                        break;
                 }
 
             }
@@ -405,6 +408,7 @@ public class MainActivity extends FaBaseActivity {
                         list.add(new UserEntity("FaSingleImageActivity", 25));
                         list.add(new UserEntity("DoubanLoading", 25));
                         list.add(new UserEntity("FaPicScanActivity", 25));
+                        list.add(new UserEntity("EditText", 25));
 
                         mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();

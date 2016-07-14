@@ -5,9 +5,6 @@ import android.util.DisplayMetrics;
 
 /**
  * 得到屏幕宽高密度等
- * @author 
- * @email chenshi011@163.com
- *
  */
 public class ScreenInfo {
 	 private Activity activity;

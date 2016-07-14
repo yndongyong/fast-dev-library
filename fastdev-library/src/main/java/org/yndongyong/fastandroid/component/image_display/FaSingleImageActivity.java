@@ -13,9 +13,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import org.yndongyong.fastandroid.R;
 import org.yndongyong.fastandroid.base.FaBaseActivity;
-import org.yndongyong.fastandroid.view.SmoothImageView;
-
-import uk.co.senab.photoview.PhotoViewAttacher;
+import org.yndongyong.fastandroid.image.SmoothImageView;
 
 /**
  * 提供类是微信，微博，点击图片，查看大图的效果
@@ -121,7 +119,7 @@ public class FaSingleImageActivity extends FaBaseActivity {
                 }
             }
         });
-        this.mSmoothImageView.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
+        /*this.mSmoothImageView.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
             @Override
             public void onPhotoTap(View view, float v, float v1) {
                 mSmoothImageView.transformOut();
@@ -131,7 +129,7 @@ public class FaSingleImageActivity extends FaBaseActivity {
             public void onOutsidePhotoTap() {
                 mSmoothImageView.transformOut();
             }
-        });
+        });*/
         this.mSmoothImageView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {

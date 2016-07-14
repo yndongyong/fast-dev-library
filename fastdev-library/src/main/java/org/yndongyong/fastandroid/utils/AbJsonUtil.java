@@ -71,7 +71,7 @@ public class AbJsonUtil {
 	 * 
 	 * 描述：将json转化为列表.
 	 * @param json
-	 * @param typeToken new TypeToken<ArrayList<?>>() {}.getType();
+	 * @param typeToken new TypeToken() {}.getType();
 	 * @return
 	 */
 	public static List<?> fromJson(String json,TypeToken typeToken) {

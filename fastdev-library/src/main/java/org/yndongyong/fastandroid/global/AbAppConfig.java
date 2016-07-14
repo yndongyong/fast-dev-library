@@ -14,6 +14,12 @@ public class AbAppConfig {
     public static int MAX_CACHE_SIZE_INBYTES = 10485760;
     public static int MAX_DISK_USAGE_INBYTES = 20971520;
 
+
+    //设置设计稿的尺寸
+    public static int UI_WIDTH = 1280;
+    public static int UI_HEIGHT = 720;
+    public static float UI_DENSITY = 2;
+
     public static String CONNECT_EXCEPTION = "无法连接到网络";
 
     public static String UNKNOWN_HOST_EXCEPTION = "连接远程地址失败";
