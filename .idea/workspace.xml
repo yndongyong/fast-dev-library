@@ -10,50 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d950d3-e888-4c4d-8144-f3129a280526" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/src/main/res/anim/cycle_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/GlideCircleTransform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/GlideRoundTransform.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/src/main/res/anim/cycle_7.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/ScaleImageView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/example/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/EditTextTestActivity.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/EditTextTestActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/TestLazyFragment.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/TestLazyFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/ThirdActivity.java" afterPath="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/ThirdActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/res/anim/shake.xml" afterPath="$PROJECT_DIR$/example/src/main/res/anim/shake.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/res/drawable/edit_input_bg.xml" afterPath="$PROJECT_DIR$/example/src/main/res/drawable/edit_input_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/res/layout/activity_edit_text_test.xml" afterPath="$PROJECT_DIR$/example/src/main/res/layout/activity_edit_text_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/src/main/res/layout/activity_second.xml" afterPath="$PROJECT_DIR$/example/src/main/res/layout/activity_second.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/build.gradle" afterPath="$PROJECT_DIR$/fastdev-library/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" afterPath="$PROJECT_DIR$/fastdev-library/fastdev-library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/BaseLazyFragment.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/BaseLazyFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseLazyFragment.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseLazyFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/image_display/FaSingleImageActivity.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/image_display/FaSingleImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/slider/Animations/BaseAnimationInterface.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/slider/Animations/BaseAnimationInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/slider/SliderLayout.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/slider/SliderLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/global/AbAppConfig.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/global/AbAppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/net/HttpUtils.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/net/HttpUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/swipeback/ViewDragHelper.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/swipeback/ViewDragHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbAppUtil.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbAppUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbGraphicUtil.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbGraphicUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbJsonUtil.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbJsonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbLogUtil.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbLogUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbViewUtil.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbViewUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/ActionSheetDialog.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/ActionSheetDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/IosDialog.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/dialog/IosDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/OnWheelChangedListener.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/OnWheelChangedListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/OnWheelClickedListener.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/city/OnWheelClickedListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/OnWheelChangedListener.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/OnWheelChangedListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/ScreenInfo.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/ScreenInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/WheelMain.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/wheel/time/WheelMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_images_detail.xml" afterPath="$PROJECT_DIR$/fastdev-library/src/main/res/layout/activity_images_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/RecyclerImageView.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/RecyclerImageView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/view/SmoothImageView.java" afterPath="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/SmoothImageView.java" />
     </list>
     <ignored path="fast-dev-library.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,22 +64,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlideCircleTransform.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/GlideCircleTransform.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SecondActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/SecondActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,11 +104,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FaBaseActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FaBaseActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72520906">
-              <caret line="465" column="34" selection-start-line="465" selection-start-column="34" selection-end-line="465" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+              <folding>
+                <element signature="e#13710#13711#0" expanded="true" />
+                <element signature="e#13745#13746#0" expanded="true" />
+                <element signature="e#13776#13777#0" expanded="true" />
+                <element signature="e#13812#13813#0" expanded="true" />
+                <element signature="e#13853#13854#0" expanded="true" />
+                <element signature="e#13901#13902#0" expanded="true" />
+                <element signature="e#13940#13941#0" expanded="true" />
+                <element signature="e#13989#13990#0" expanded="true" />
+                <element signature="e#14033#14034#0" expanded="true" />
+                <element signature="e#14093#14094#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScaleImageView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/ScaleImageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45034248">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+                <element signature="e#1692#1693#0" expanded="true" />
+                <element signature="e#1734#1735#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="322" column="80" selection-start-line="322" selection-start-column="80" selection-end-line="322" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -187,19 +170,6 @@
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_second.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/src/main/res/layout/activity_second.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7164179">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -3076,7 +3046,6 @@
         <option value="$PROJECT_DIR$/example/src/main/res/drawable/edit_input_bg.xml" />
         <option value="$PROJECT_DIR$/example/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/ThirdActivity.java" />
-        <option value="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
         <option value="$PROJECT_DIR$/example/src/main/res/anim/shank.xml" />
         <option value="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/EditTextTestActivity.java" />
         <option value="$PROJECT_DIR$/example/src/main/res/anim/shake.xml" />
@@ -3089,6 +3058,8 @@
         <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/utils/AbViewUtil.java" />
         <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/global/AbAppConfig.java" />
         <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java" />
+        <option value="$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java" />
+        <option value="$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/ScaleImageView.java" />
       </list>
     </option>
   </component>
@@ -3909,7 +3880,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26980484" sideWeight="0.28456593" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29047072" sideWeight="0.7154341" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29047072" sideWeight="0.7154341" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24651662" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3986,13 +3957,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-refreshlayout/1.1.4/5603d2f29a2aaeca3312ee6471dc4a7e51d7a49a/bga-refreshlayout-1.1.4-sources.jar!/cn/bingoogolapple/refreshlayout/BGARefreshLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="903" column="0" selection-start-line="903" selection-start-column="0" selection-end-line="903" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/component/refreshlayout/RefreshLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4260,14 +4224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.810811">
-          <caret line="327" column="71" selection-start-line="327" selection-start-column="71" selection-end-line="327" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.78125">
@@ -4292,7 +4248,7 @@
         <state vertical-scroll-proportion="0.42172074">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4341,11 +4297,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4439,11 +4393,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example/src/main/java/org/fastandroid/myapplication/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="322" column="80" selection-start-line="322" selection-start-column="80" selection-end-line="322" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/base/FaBaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72520906">
-          <caret line="465" column="34" selection-start-line="465" selection-start-column="34" selection-end-line="465" selection-end-column="34" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+          <folding>
+            <element signature="e#13710#13711#0" expanded="true" />
+            <element signature="e#13745#13746#0" expanded="true" />
+            <element signature="e#13776#13777#0" expanded="true" />
+            <element signature="e#13812#13813#0" expanded="true" />
+            <element signature="e#13853#13854#0" expanded="true" />
+            <element signature="e#13901#13902#0" expanded="true" />
+            <element signature="e#13940#13941#0" expanded="true" />
+            <element signature="e#13989#13990#0" expanded="true" />
+            <element signature="e#14033#14034#0" expanded="true" />
+            <element signature="e#14093#14094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdev-library/src/main/java/org/yndongyong/fastandroid/image/ScaleImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45034248">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

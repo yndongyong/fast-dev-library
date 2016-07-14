@@ -36,11 +36,16 @@ import org.yndongyong.fastandroid.utils.FaActivityUtil;
  * Created by Dong on 2016/5/11.
  */
 public abstract class FaBaseActivity extends AppCompatActivity {
+    private static final int INVALID = -1;
     protected String TAG = null;
 
     protected int mScreenWidth = 0;
     protected int mScreenHeight = 0;
     protected float mScreenDensity = 0.0F;
+
+    protected float scaleWidth = 0;
+    protected float scaleHeight = 0;
+    
     protected Context mContext = null;
     protected Toolbar mToolbar;
     protected MaterialDialog mProgressDialog = null;//进度条
@@ -95,6 +100,9 @@ public abstract class FaBaseActivity extends AppCompatActivity {
         this.mScreenDensity = displayMetrics.density;
         this.mScreenHeight = displayMetrics.heightPixels;
         this.mScreenWidth = displayMetrics.widthPixels;
+
+        scaleWidth = mScreenWidth / mUiWidth;
+        scaleHeight = mScreenHeight/ mUiHeight;
 
         if (this.getContentViewLayoutID() != 0) {
             this.setContentView(this.getContentViewLayoutID());
@@ -467,5 +475,76 @@ public abstract class FaBaseActivity extends AppCompatActivity {
         }
     }
     // TODO: 2016/7/14 UI适配相关 
-    
+    private float mUiWidth = 670, mUiHeight =1334;
+
+    //设置UI设计稿的尺寸
+    public void setUiHeight(){
+        this.mUiHeight =670;
+    }
+
+    public void getUiWidth(){
+        this.mUiWidth = 1334;
+    }
+
+    public  int getWidthSize(int size){
+        return (int) (size * scaleWidth);
+    }
+    public int getHightSize(int size){
+        return (int) (size * scaleHeight);
+    }
+
+    public  float getTextSize(int pxSize){
+        return (pxSize*scaleHeight) / mScreenDensity;
+    }
+
+    public  void setViewSize(int width, int height, View v){
+        int paramWidth = getWidthSize(width);
+        int paramHeight = getHightSize(height);
+        ViewGroup.MarginLayoutParams params
+                = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
+        if (width != INVALID){
+            params.width = paramWidth;
+        }
+        if (height != INVALID){
+            params.height = paramHeight;
+        }
+        v.setLayoutParams(params);
+    }
+
+    public void setViewPadding(int left, int top, int right, int bottom,
+                                      View v){
+        left = getWidthSize(left);
+        top = getHightSize(top);
+        right = getWidthSize(right);
+        bottom = getWidthSize(bottom);
+        v.setPadding(left, top, right, bottom);
+    }
+
+
+    public void setViewMargin(int left, int top, int right, int bottom,
+                                     View v){
+        int paramLeft = getWidthSize(left);
+        int paramTop =  getHightSize(top);
+        int paramRight = getWidthSize(right);
+        int paramBottom = getHightSize(bottom);
+        ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams)
+                v.getLayoutParams();
+        if (left != INVALID){
+            params.leftMargin = paramLeft;
+        }
+        if (right != INVALID){
+            params.rightMargin = paramRight;
+        }
+        if (top != INVALID){
+            params.topMargin = paramTop;
+        }
+        if (bottom != INVALID){
+            params.bottomMargin = paramBottom;
+        }
+        v.setLayoutParams(params);
+    }
+
+
+
+
 }

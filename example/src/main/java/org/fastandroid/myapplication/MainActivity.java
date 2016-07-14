@@ -320,7 +320,7 @@ public class MainActivity extends FaBaseActivity {
                         imags.setLis(list);
 
                         Intent intent = new Intent(mContext, FaPicScanActivity.class);
-                        intent.putExtra(FaPicScanActivity.EXTRA_CURRENT_INDEX, 0);
+                        intent.putExtra(FaPicScanActivity.EXTRA_CURRENT_INDEX, 1);
                         intent.putExtra(FaPicScanActivity.EXTRA_IMAGES, imags);
                         readyGo(intent);
                         break;
