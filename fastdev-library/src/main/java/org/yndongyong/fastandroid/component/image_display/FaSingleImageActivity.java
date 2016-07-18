@@ -89,8 +89,8 @@ public class FaSingleImageActivity extends FaBaseActivity {
 
     private void getbundelExtras(Bundle bundle) {
         this.mImageUrl = bundle.getString(INTENT_IMAGE_URL_TAG, "");
-        this.mLocationX = bundle.getInt(INTENT_IMAGE_X_TAG, mScreenWidth / 2);
-        this.mLocationY = bundle.getInt(INTENT_IMAGE_Y_TAG, mScreenHeight / 2);
+        this.mLocationX = bundle.getInt(INTENT_IMAGE_X_TAG, 0);
+        this.mLocationY = bundle.getInt(INTENT_IMAGE_Y_TAG, 0);
         this.mWidth = bundle.getInt(INTENT_IMAGE_W_TAG, 0);
         this.mHeight = bundle.getInt(INTENT_IMAGE_H_TAG, 0);
 //        this.mBitmap = bundle.getParcelable(INTENT_IMAGE_BITMAP_TAG);
