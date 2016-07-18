@@ -326,6 +326,9 @@ public class MainActivity extends FaBaseActivity {
                         break;
                     case "EditText":
                         EditTextTestActivity_.intent(mContext).start();
+                        break; 
+                    case "Photos":
+                        StaggeredActivity_.intent(mContext).start();
                         break;
                 }
 
@@ -409,6 +412,7 @@ public class MainActivity extends FaBaseActivity {
                         list.add(new UserEntity("DoubanLoading", 25));
                         list.add(new UserEntity("FaPicScanActivity", 25));
                         list.add(new UserEntity("EditText", 25));
+                        list.add(new UserEntity("Photos", 25));
 
                         mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();

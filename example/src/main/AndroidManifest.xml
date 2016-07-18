@@ -37,9 +37,10 @@
             android:theme="@style/AppTheme.Default.ImagesDetail">
         </activity>
         <activity android:name=".EditTextTestActivity">
-            
         </activity>
         <activity android:name=".EditTextTestActivity_"/>
+        <activity android:name=".StaggeredActivity_">
+        </activity>
     </application>
 
 </manifest>
