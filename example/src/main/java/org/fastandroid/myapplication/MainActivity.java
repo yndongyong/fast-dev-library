@@ -332,6 +332,10 @@ public class MainActivity extends FaBaseActivity {
                         StaggeredActivity_.intent(mContext).start();
                         
                         break;
+                    case "PowerPopu":
+                        PowerPopumenuActivity_.intent(mContext).start();
+
+                        break;
                 }
 
             }
@@ -473,6 +477,7 @@ public class MainActivity extends FaBaseActivity {
         list.add(new UserEntity("FaPicScanActivity", 25));
         list.add(new UserEntity("EditText", 25));
         list.add(new UserEntity("Photos", 25));
+        list.add(new UserEntity("PowerPopu", 25));
 
         mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();
