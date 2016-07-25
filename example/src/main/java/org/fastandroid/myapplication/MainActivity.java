@@ -397,10 +397,9 @@ public class MainActivity extends FaBaseActivity {
         mRefreshLayout.showLoadingView();
         mUserInfoAdapter.getDatas().clear();
 
-        /*HttpUtils.doGetAsyn(url, new HttpUtils.CallBack() {
+        HttpUtils.doGetAsyn(url, new HttpUtils.CallBack() {
             @Override
             public void onRequestComplete(final String result) {
-                final GankResponse gankResponse = new Gson().fromJson(result, GankResponse.class);
                 _handler.post(new Runnable() {
                     @Override
                     public void run() {
@@ -426,7 +425,8 @@ public class MainActivity extends FaBaseActivity {
 //                           
                         mUserInfoAdapter.clear();
                         mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
-//                        mRefreshLayout.endRefreshing();
+                        mRefreshLayout.endRefreshing();
+                        showSnackBar(mRefreshLayout,"数据已经全部加载完毕");
                     }
                 });
 
@@ -441,7 +441,9 @@ public class MainActivity extends FaBaseActivity {
                     @Override
                     public void run() {
 //                        mRefreshLayout.showEmptyView();
+                        mRefreshLayout.endRefreshing();
                         mRefreshLayout.showErrorView(error);
+                        
 
                         List<UserEntity> list = new ArrayList<UserEntity>();
                         list.add(new UserEntity("alertSheet1", 23));
@@ -461,9 +463,9 @@ public class MainActivity extends FaBaseActivity {
                     }
                 });
             }
-        });*/
+        });
 
-        List<UserEntity> list = new ArrayList<UserEntity>();
+        /*List<UserEntity> list = new ArrayList<UserEntity>();
         list.add(new UserEntity("alertSheet1", 23));
         list.add(new UserEntity("alertSheet2", 24));
         list.add(new UserEntity("iosDialog3", 25));
@@ -484,7 +486,7 @@ public class MainActivity extends FaBaseActivity {
 //                           
         mUserInfoAdapter.clear();
         mUserInfoAdapter.addNewDatas(list);//添加原有内容的最上面
-//                        mRefreshLayout.endRefreshing();
+//                        mRefreshLayout.endRefreshing();*/
     }
 
     /**
@@ -523,6 +525,7 @@ public class MainActivity extends FaBaseActivity {
                 Log.e(TAG, "onRequestError:" + error);
                 exception.printStackTrace();
                 Toast.makeText(mContext, exception.getMessage(), Toast.LENGTH_SHORT).show();
+                mRefreshLayout.endLoadingMore();
             }
         });
 

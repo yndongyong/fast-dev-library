@@ -296,12 +296,12 @@ public abstract class FaBaseActivity extends AppCompatActivity {
 
     public void showSnackBar(View topView, String msg) {
         if (null != msg && !AbStrUtil.isEmpty(msg)) {
-            /*Snackbar sBar = Snackbar.make(this.getFloatTargetView(), msg, Snackbar.LENGTH_SHORT);
+            Snackbar sBar = Snackbar.make(topView, msg, Snackbar.LENGTH_SHORT);
             Snackbar.SnackbarLayout ve = (Snackbar.SnackbarLayout) sBar.getView();
-            ve.setAlpha(0.8F);
-            sBar.show();*/
-            TSnackbar.make(topView, msg, TSnackbar.LENGTH_LONG)
-                    .show();
+//            ve.setAlpha(0.9F);
+            sBar.show();
+         /*   TSnackbar.make(topView, msg, TSnackbar.LENGTH_LONG)
+                    .show();*/
         }
 
     }

@@ -38,7 +38,7 @@ public class PowerPopumenuActivity extends FaBaseActivity {
         item2.url = "http://www.jxms.net/Article/UploadFiles/201108/20110825143503340.jpg";
         mList.add(item2);
         PowerPopMenuModel item3 = new PowerPopMenuModel();
-        item3.text = "初二一班一班";
+        item3.text = "二一-一-";
         mList.add(item3);
 
         mPowerPopMenu = new PowerPopMenu(mContext, LinearLayoutManager.VERTICAL, PowerPopMenu.POP_UP_TO_DOWN);

@@ -116,9 +116,6 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         if (this.mEmptyView != null) {
             this.mEmptyView.setVisibility(View.GONE);
         }
-        // TODO: 2016/6/10 dong add  ,之前是填充完数据之后手动调用
-        this.endRefreshing();
-        
     }
 
     public void showEmptyView() {
@@ -142,8 +139,6 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         this.mEmptyView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
 
-        // TODO: 2016/6/10 dong add  ,之前是填充完数据之后手动调用
-        this.endRefreshing();
     }
 
     public void showErrorView(String errorMsg) {
@@ -166,10 +161,6 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         this.refreshLayoutHelper.getTvMsg().setText(AbStrUtil.isEmpty(errorMsg) ? this.refreshLayoutHelper.getErrorMsg() : errorMsg);
         this.mEmptyView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
-        
-        
-        // TODO: 2016/6/10 dong add  ,之前是填充完数据之后手动调用
-        this.endRefreshing();
     }
 
     public void showLoadingView() {

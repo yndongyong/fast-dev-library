@@ -67,7 +67,7 @@ publish {
     userOrg = 'yndongyong'//bintray.com用户名
     groupId = 'org.yndongyong'//jcenter path
     artifactId = 'fastandroid'//module name
-    publishVersion = '0.0.1'// version code
+    publishVersion = '0.0.2'// version code
     desc = 'An framework for fast develop of Android'//description 
     website = 'https://github.com/yndongyong/fast-dev-library'//website
 }
