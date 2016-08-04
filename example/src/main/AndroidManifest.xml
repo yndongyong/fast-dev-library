@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.fastandroid.myapplication">
+<manifest package="org.fastandroid.myapplication"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,33 +11,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Default">
         <activity
-        android:name=".MainActivity_"
-        android:theme="@style/AppTheme.Default.Start">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".MainActivity_"
+            android:theme="@style/AppTheme.Default.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".SecondActivity_"
             android:label="第二页"
-            android:theme="@style/AppTheme.Default"></activity>
+            android:theme="@style/AppTheme.Default"/>
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity"
             android:label="预览单个图片"
-            android:theme="@style/AppTheme.Default.ImagesDetail" />
+            android:theme="@style/AppTheme.Default.ImagesDetail"/>
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaPicScanActivity"
             android:label="预览多个图片"
-            android:theme="@style/AppTheme.Default.ImagesDetail" />
+            android:theme="@style/AppTheme.Default.ImagesDetail"/>
         <activity
             android:name=".ThirdActivity"
-            android:theme="@style/AppTheme.Default.ImagesDetail"></activity>
-        <activity android:name=".EditTextTestActivity"></activity>
-        <activity android:name=".EditTextTestActivity_" />
-        <activity android:name=".StaggeredActivity_"></activity>
-        <activity android:name=".PowerPopumenuActivity_"></activity>
+            android:theme="@style/AppTheme.Default.ImagesDetail"/>
+        <activity android:name=".EditTextTestActivity"/>
+        <activity android:name=".EditTextTestActivity_"/>
+        <activity android:name=".StaggeredActivity_"/>
+        <activity android:name=".PowerPopumenuActivity_"/>
+        <activity
+            android:name=".Main2Activity_"
+            android:label="">
+        </activity>
     </application>
 
 </manifest>

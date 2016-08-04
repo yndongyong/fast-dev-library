@@ -53,7 +53,7 @@
     <color name="blue">#ff0099cc</color>
     <color name="blue_dark">#ff00719b</color>
 
-    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
 
         

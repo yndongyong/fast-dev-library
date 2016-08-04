@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
+import org.yndongyong.fastandroid.R;
 import org.yndongyong.fastandroid.utils.AbLogUtil;
 import org.yndongyong.fastandroid.utils.AbStrUtil;
 
@@ -11,7 +12,7 @@ import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import cn.bingoogolapple.refreshlayout.BGARefreshViewHolder;
 
 /**
- * 上拉刷新，下拉加载的布局，可以饱和任意子view
+ * 上拉刷新，下拉加载的布局，可以包含任意子view
  * Created by Dong on 2016/5/15.
  */
 public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.BGARefreshLayoutDelegate {
@@ -19,26 +20,19 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
     private static final String TAG = RefreshLayout.class.getSimpleName();
     private Context mContext;
     private DataSource mDataSource;
-    private RefreshLayoutHelper refreshLayoutHelper;
+    private RefreshLayoutLoadingHelper mLoadingHelper;
     private View mContentView;
-    private View mEmptyView;
+    private View mStatusView;
     private boolean isLoadMore = true;
     public boolean isRefreshing = false;
     private int emptyImage;
     private int errorImage;
 
-    public int getErrorImage() {
-        return this.errorImage;
-    }
-
+    //设置加载错误时显示的图片
     public void setErrorImage(int errorImage) {
         this.errorImage = errorImage;
     }
-
-    public int getEmptyImage() {
-        return this.emptyImage;
-    }
-
+    //设置加载数据我空时显示的图片
     public void setEmptyImage(int emptyImage) {
         this.emptyImage = emptyImage;
     }
@@ -49,8 +43,8 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
 
     public RefreshLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-//        this.emptyImage = R.mipmap.ic_empty;
-//        this.errorImage = R.mipmap.ic_error;
+        this.emptyImage = R.mipmap.ic_empty;
+        this.errorImage = R.mipmap.ic_error;
         this.mContext = context;
     }
 
@@ -61,27 +55,15 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
     public void onFinishInflate() {
         super.onFinishInflate();
         this.mContentView = this.getChildAt(1);
-        this.refreshLayoutHelper = new RefreshLayoutHelper(this.mContext);
+        this.mLoadingHelper = new RefreshLayoutLoadingHelper(this.mContext);
         this.setDelegate(this);
     }
 
-    public DataSource getDataSource() {
-        return this.mDataSource;
-    }
-
     public void setDataSource(DataSource dataSource) {
-        // TODO: 2016/5/15 更改bga的风格 
-//        this.setRefreshViewHolder(new BGANormalRefreshViewHolder(this.mContext, this.isLoadMore));
-//        this.setRefreshViewHolder(new BGAMoocStyleRefreshViewHolder(this.mContext, this.isLoadMore));
-//        this.setRefreshViewHolder(new BGAStickinessRefreshViewHolder(this.mContext, this.isLoadMore));
-//        this.setRefreshViewHolder(new BGAMeiTuanRefreshViewHolder(this.mContext, this.isLoadMore));
-
         this.mDataSource = dataSource;
     }
-
     /**
-     * 定义上拉刷新 ，下拉加载相关的view风格
-     *
+     * 定义下拉刷新 ，上拉加载相关的view风格
      * @param viewHolder
      */
     public void setRefreshViewHolder(BGARefreshViewHolder viewHolder, boolean isLoadMore) {
@@ -89,16 +71,16 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         this.isLoadMore = isLoadMore;
     }
 
-    public RefreshLayoutHelper getRefreshLayoutHelper() {
-        return this.refreshLayoutHelper;
+    public RefreshLayoutLoadingHelper getmLoadingHelper() {
+        return this.mLoadingHelper;
     }
 
     /**
-     * 定义加载更多，加载失败的view的风格
+     * define the loading style, error ,data empty style 
      * @param refreshLayoutHelper
      */
-    public void setRefreshLayoutHelper(RefreshLayoutHelper refreshLayoutHelper) {
-        this.refreshLayoutHelper = refreshLayoutHelper;
+    public void setRefreshLayoutLoadingHelper(RefreshLayoutLoadingHelper refreshLayoutHelper) {
+        this.mLoadingHelper = refreshLayoutHelper;
     }
 
     public void onBGARefreshLayoutBeginRefreshing(BGARefreshLayout bgaRefreshLayout) {
@@ -107,23 +89,30 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
     }
 
     public boolean onBGARefreshLayoutBeginLoadingMore(BGARefreshLayout bgaRefreshLayout) {
+        this.isLoadMore = true;
         return this.mDataSource.loadMore();
     }
 
+    /**
+     * show container view
+     */
     public void showContentView() {
         AbLogUtil.d(TAG,"showContentView()");
         this.mContentView.setVisibility(View.VISIBLE);
-        if (this.mEmptyView != null) {
-            this.mEmptyView.setVisibility(View.GONE);
+        if (this.mStatusView != null) {
+            this.mStatusView.setVisibility(View.GONE);
         }
     }
 
+    /**
+     * Show empty view when the dataSet is empty  
+     */
     public void showEmptyView() {
         AbLogUtil.d(TAG,"showEmptyView()");
-        if (this.mEmptyView == null) {
-            this.mEmptyView = this.getRefreshLayoutHelper().getEmptyView();
-            this.addView(this.mEmptyView);
-            this.refreshLayoutHelper.getImageView().setOnClickListener(new OnClickListener() {
+        if (this.mStatusView == null) {
+            this.mStatusView = this.getmLoadingHelper().getStatusView();
+            this.addView(this.mStatusView);
+            this.mLoadingHelper.getImageView().setOnClickListener(new OnClickListener() {
                 public void onClick(View view) {
                     RefreshLayout.this.showLoadingView();
                     RefreshLayout.this.mDataSource.refreshData();
@@ -131,22 +120,25 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
             });
         }
 
-        this.refreshLayoutHelper.getCircularProgressBar().setVisibility(View.GONE);
-        this.refreshLayoutHelper.getImageView().setVisibility(View.VISIBLE);
-        this.refreshLayoutHelper.getImageView().setImageResource(this.emptyImage);
-        this.refreshLayoutHelper.getTvMsg().setVisibility(View.VISIBLE);
-        this.refreshLayoutHelper.getTvMsg().setText(this.refreshLayoutHelper.getEmptyInfoStr());
-        this.mEmptyView.setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getCircularProgressBar().setVisibility(View.GONE);
+        this.mLoadingHelper.getImageView().setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getImageView().setImageResource(this.emptyImage);
+        this.mLoadingHelper.getTvMsg().setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getTvMsg().setText(this.mLoadingHelper.getEmptyInfoStr());
+        this.mStatusView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
 
     }
 
+    /**
+     * Show empty view when had dataSet failed;
+     */
     public void showErrorView(String errorMsg) {
         AbLogUtil.d(TAG,"showErrorView()");
-        if (this.mEmptyView == null) {
-            this.mEmptyView = this.getRefreshLayoutHelper().getEmptyView();
-            this.addView(this.mEmptyView);
-            this.refreshLayoutHelper.getImageView().setOnClickListener(new OnClickListener() {
+        if (this.mStatusView == null) {
+            this.mStatusView = this.getmLoadingHelper().getStatusView();
+            this.addView(this.mStatusView);
+            this.mLoadingHelper.getImageView().setOnClickListener(new OnClickListener() {
                 public void onClick(View view) {
                     RefreshLayout.this.showLoadingView();
                     RefreshLayout.this.mDataSource.refreshData();
@@ -154,21 +146,24 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
             });
         }
 
-        this.refreshLayoutHelper.getCircularProgressBar().setVisibility(View.GONE);
-        this.refreshLayoutHelper.getImageView().setVisibility(View.VISIBLE);
-        this.refreshLayoutHelper.getImageView().setImageResource(this.errorImage);
-        this.refreshLayoutHelper.getTvMsg().setVisibility(View.VISIBLE);
-        this.refreshLayoutHelper.getTvMsg().setText(AbStrUtil.isEmpty(errorMsg) ? this.refreshLayoutHelper.getErrorMsg() : errorMsg);
-        this.mEmptyView.setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getCircularProgressBar().setVisibility(View.GONE);
+        this.mLoadingHelper.getImageView().setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getImageView().setImageResource(this.errorImage);
+        this.mLoadingHelper.getTvMsg().setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getTvMsg().setText(AbStrUtil.isEmpty(errorMsg) ? this.mLoadingHelper.getErrorMsg() : errorMsg);
+        this.mStatusView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
     }
 
+    /**
+     * Show loading view when acquiring dataSet  
+     */
     public void showLoadingView() {
         AbLogUtil.d(TAG,"showLoadingView()");
-        if (this.mEmptyView == null) {
-            this.mEmptyView = this.getRefreshLayoutHelper().getEmptyView();
-            this.addView(this.mEmptyView);
-            this.refreshLayoutHelper.getImageView().setOnClickListener(new OnClickListener() {
+        if (this.mStatusView == null) {
+            this.mStatusView = this.getmLoadingHelper().getStatusView();
+            this.addView(this.mStatusView);
+            this.mLoadingHelper.getImageView().setOnClickListener(new OnClickListener() {
                 public void onClick(View view) {
                     RefreshLayout.this.showLoadingView();
                     RefreshLayout.this.mDataSource.refreshData();
@@ -176,21 +171,31 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
             });
         }
 
-        this.refreshLayoutHelper.getCircularProgressBar().setVisibility(View.VISIBLE);
-        this.refreshLayoutHelper.getImageView().setVisibility(View.GONE);
-        this.refreshLayoutHelper.getTvMsg().setVisibility(View.VISIBLE);
-        this.refreshLayoutHelper.getTvMsg().setText(this.refreshLayoutHelper.getLoadingInfoStr());
-        this.mEmptyView.setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getCircularProgressBar().setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getImageView().setVisibility(View.GONE);
+        this.mLoadingHelper.getTvMsg().setVisibility(View.VISIBLE);
+        this.mLoadingHelper.getTvMsg().setText(this.mLoadingHelper.getLoadingInfoStr());
+        this.mStatusView.setVisibility(View.VISIBLE);
         this.mContentView.setVisibility(View.GONE);
     }
 
+    /**
+     * End the refreshing status;
+     */
     public void endRefreshing() {
         AbLogUtil.d(TAG,"endRefreshing()");
         this.isRefreshing = false;
         super.endRefreshing();
+        
+       
     }
-
-    public int getContentViewVisibility() {
-        return this.mContentView.getVisibility();
+    /**
+     * End the loading status;
+     */
+    public void endLoadingMore(){
+        AbLogUtil.d(TAG,"endRefreshing()");
+        this.isLoadMore = false;
+        super.endLoadingMore();
+        
     }
 }

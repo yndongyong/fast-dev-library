@@ -13,17 +13,28 @@ import org.yndongyong.fastandroid.view.progress.CircularProgressBar;
 /**
  * Created by Dong on 2016/5/15.
  */
-public class RefreshLayoutHelper {
+public class RefreshLayoutLoadingHelper {
     
     private Context mContext;
     private String loadingInfoStr;
     private String emptyInfoStr;
     private String errorMsg;
-    private View emptyView;
+    
+    private View statusView;
     private int resEmptyView;
-    private CircularProgressBar circularProgressBar;
+   
     private ImageView imageView;
     private TextView tvMsg;
+    private CircularProgressBar circularProgressBar;
+    
+
+   
+
+    public RefreshLayoutLoadingHelper(Context context, int resEmptyView) {
+        this.resEmptyView = R.layout.view_empty;
+        this.mContext = context;
+        this.resEmptyView = resEmptyView;
+    }
 
     public TextView getTvMsg() {
         return this.tvMsg;
@@ -37,31 +48,26 @@ public class RefreshLayoutHelper {
         return this.circularProgressBar;
     }
 
-    public RefreshLayoutHelper(Context context) {
+    public RefreshLayoutLoadingHelper(Context context) {
         this.resEmptyView = R.layout.view_empty;
         this.mContext = context;
     }
 
-    public RefreshLayoutHelper(Context context, int resEmptyView) {
-        this.resEmptyView = R.layout.view_empty;
-        this.mContext = context;
-        this.resEmptyView = resEmptyView;
-    }
-
-    public View getEmptyView() {
-        if (this.emptyView == null) {
-            this.emptyView = LayoutInflater.from(this.mContext).inflate(this.resEmptyView, (ViewGroup) null);
+    public View getStatusView() {
+        if (this.statusView == null) {
+            this.statusView = LayoutInflater.
+                    from(this.mContext).inflate(this.resEmptyView, (ViewGroup) null);
             this.circularProgressBar = 
-                    (CircularProgressBar) this.emptyView.findViewById(R.id
+                    (CircularProgressBar) this.statusView.findViewById(R.id
                     .loading_progress);
-            this.imageView = (ImageView) this.emptyView.findViewById(R.id.message_icon);
-            this.tvMsg = (TextView) this.emptyView.findViewById(R.id.tv_msg);
+            this.imageView = (ImageView) this.statusView.findViewById(R.id.message_icon);
+            this.tvMsg = (TextView) this.statusView.findViewById(R.id.tv_msg);
             this.loadingInfoStr = this.mContext.getString(R.string.common_loading_message);
             this.emptyInfoStr = this.mContext.getString(R.string.common_empty_msg);
             this.errorMsg = this.mContext.getString(R.string.common_error_msg);
         }
 
-        return this.emptyView;
+        return this.statusView;
     }
 
     public String getLoadingInfoStr() {
