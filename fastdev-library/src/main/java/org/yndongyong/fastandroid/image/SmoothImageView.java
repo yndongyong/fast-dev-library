@@ -12,14 +12,12 @@ import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 
 import com.bumptech.glide.load.resource.bitmap.GlideBitmapDrawable;
 import com.bumptech.glide.load.resource.gif.GifDrawable;
 
-import uk.co.senab.photoview.PhotoView;
 
 /**
  * 平滑缩放的ImageView，提供放大进入,从所缩略大小，开始放大，缩小退出的动画，缩小到缩略图大小,

@@ -198,4 +198,13 @@ public class RefreshLayout extends BGARefreshLayout implements BGARefreshLayout.
         super.endLoadingMore();
         
     }
+
+    /**
+     * 设置下拉刷新是否可用
+     *
+     * @param pullDownRefreshEnable
+     */
+    public void setPullDownRefreshEnable(boolean pullDownRefreshEnable) {
+       super.setPullDownRefreshEnable(pullDownRefreshEnable);
+    }
 }

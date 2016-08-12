@@ -14,15 +14,18 @@
             android:name=".MainActivity_"
             android:theme="@style/AppTheme.Default.Start">
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
+
             </intent-filter>
         </activity>
         <activity
             android:name=".SecondActivity_"
             android:label="第二页"
             android:theme="@style/AppTheme.Default"/>
+
         <activity
             android:name="org.yndongyong.fastandroid.component.image_display.FaSingleImageActivity"
             android:label="预览单个图片"
@@ -33,6 +36,7 @@
             android:theme="@style/AppTheme.Default.ImagesDetail"/>
         <activity
             android:name=".ThirdActivity"
+
             android:theme="@style/AppTheme.Default.ImagesDetail"/>
         <activity android:name=".EditTextTestActivity"/>
         <activity android:name=".EditTextTestActivity_"/>
@@ -41,6 +45,12 @@
       
         <activity android:name=".TestRefreshLoadingStatusHelper_">
         </activity>
+
+        <activity android:name=".EditTextTestActivity" />
+        <activity android:name=".EditTextTestActivity_" />
+        <activity android:name=".StaggeredActivity_" />
+        <activity android:name=".PowerPopumenuActivity_" />
+
     </application>
 
 </manifest>
