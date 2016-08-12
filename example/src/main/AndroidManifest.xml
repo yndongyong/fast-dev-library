@@ -38,9 +38,8 @@
         <activity android:name=".EditTextTestActivity_"/>
         <activity android:name=".StaggeredActivity_"/>
         <activity android:name=".PowerPopumenuActivity_"/>
-        <activity
-            android:name=".Main2Activity_"
-            android:label="">
+      
+        <activity android:name=".TestRefreshLoadingStatusHelper_">
         </activity>
     </application>
 

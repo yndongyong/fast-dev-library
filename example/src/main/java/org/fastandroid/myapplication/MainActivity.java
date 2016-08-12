@@ -336,6 +336,9 @@ public class MainActivity extends FaBaseActivity {
                         PowerPopumenuActivity_.intent(mContext).start();
 
                         break;
+                    case "TestRefreshLoadingStatusHelper":
+//                        TestRefreshLoadingStatusHelper_
+                        break;
                 }
 
             }

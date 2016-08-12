@@ -23,13 +23,13 @@
 
 
         <ImageView
-            android:id="@+id/message_icon"
+            android:id="@+id/iv_icon_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_empty"/>
 
         <TextView
-            android:id="@+id/tv_msg"
+            android:id="@+id/tv_msg_tips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"

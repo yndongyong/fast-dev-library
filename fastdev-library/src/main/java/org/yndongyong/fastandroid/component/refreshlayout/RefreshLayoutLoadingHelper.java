@@ -60,8 +60,8 @@ public class RefreshLayoutLoadingHelper {
             this.circularProgressBar = 
                     (CircularProgressBar) this.statusView.findViewById(R.id
                     .loading_progress);
-            this.imageView = (ImageView) this.statusView.findViewById(R.id.message_icon);
-            this.tvMsg = (TextView) this.statusView.findViewById(R.id.tv_msg);
+            this.imageView = (ImageView) this.statusView.findViewById(R.id.iv_icon_placeholder);
+            this.tvMsg = (TextView) this.statusView.findViewById(R.id.tv_msg_tips);
             this.loadingInfoStr = this.mContext.getString(R.string.common_loading_message);
             this.emptyInfoStr = this.mContext.getString(R.string.common_empty_msg);
             this.errorMsg = this.mContext.getString(R.string.common_error_msg);
