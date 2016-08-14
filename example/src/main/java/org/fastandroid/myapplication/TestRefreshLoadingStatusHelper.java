@@ -73,16 +73,18 @@ public class TestRefreshLoadingStatusHelper extends FaBaseActivity {
         mRecyclerView.postDelayed(new Runnable() {
             @Override
             public void run() {
-                mRefreshLayout.showErrorView();
-            }
-        },300);
-        //case1.失败
-        //mRefreshLayout.showErrorView(error);
+                //case1.失败
+//                mRefreshLayout.showErrorView();
 
-        //case2.无数据
-        //mRefreshLayout.showEmptyView();      
+                mRefreshLayout.showNetWorkErrorView();
 
-        //case3.成功
+                //case2.无数据
+//                mRefreshLayout.showEmptyView();
+
+                //case3.成功
 //        mRefreshLayout.showContentView();
+            }
+        },3000);
+
     }
 }

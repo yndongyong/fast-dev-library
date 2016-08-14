@@ -71,6 +71,7 @@ public class NormalLoadingStatusHelper extends LoadingStatusHelper {
 
     @Override
     public void changeToLoading() {
+        progressBar.setVisibility(View.VISIBLE);
         iv_icon_placeholder.setVisibility(View.GONE);
         tv_msg_tips.setText(loadingStr);
     }

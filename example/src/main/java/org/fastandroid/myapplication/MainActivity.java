@@ -337,7 +337,7 @@ public class MainActivity extends FaBaseActivity {
 
                         break;
                     case "TestRefreshLoadingStatusHelper":
-//                        TestRefreshLoadingStatusHelper_
+                        TestRefreshLoadingStatusHelper_.intent(mContext).start();
                         break;
                 }
 
@@ -393,8 +393,8 @@ public class MainActivity extends FaBaseActivity {
      */
     private void refresh() {
 //        String url = "http://120.24.160.24/api/history/content/2/1";
-//        String url = "http://gank.io/api/history/content/2/1";
-        String url = "http://www.baidu.com";
+        String url = "http://gank.io/api/history/content/2/1";
+//        String url = "https://www.baidu.com";
 
 //        mProgressDialog = ProgressDialog.show(MainActivity.this, null, "loading");
         mRefreshLayout.showLoadingView();
@@ -422,6 +422,7 @@ public class MainActivity extends FaBaseActivity {
                         list.add(new UserEntity("FaPicScanActivity", 25));
                         list.add(new UserEntity("EditText", 25));
                         list.add(new UserEntity("Photos", 25));
+                        list.add(new UserEntity("TestRefreshLoadingStatusHelper", 25));
 
                         mRefreshLayout.showContentView();
 //                            mRefreshLayout.showEmptyView();

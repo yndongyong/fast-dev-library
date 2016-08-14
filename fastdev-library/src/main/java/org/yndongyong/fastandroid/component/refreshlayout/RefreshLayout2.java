@@ -24,6 +24,7 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
     private View mContentView;
     private View mStatusView;
     public boolean isRefreshing = false;
+    private boolean isLoadMore = true;
 
     //是否 显示 statusView ,为了防止在网络工具类中控制了 加载状态
     protected boolean isShowStatusLoading = true;
@@ -55,7 +56,6 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
     public void setShowStatusLoading(boolean showStatusLoading) {
         isShowStatusLoading = showStatusLoading;
     }
-
     /**
      * 定义下拉刷新 ，上拉加载相关的view风格
      *
@@ -80,7 +80,8 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
     }
 
     public boolean onBGARefreshLayoutBeginLoadingMore(BGARefreshLayout bgaRefreshLayout) {
-        return this.mDataSource.loadMore();
+        isLoadMore = this.mDataSource.loadMore();
+        return isLoadMore;
     }
 
     /**
@@ -88,10 +89,12 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
      */
     public void showContentView() {
         AbLogUtil.d(TAG, "showContentView()");
+        closeRefreshinghOrLoadMore();
         this.mContentView.setVisibility(View.VISIBLE);
         if (this.mStatusView != null) {
             this.mStatusView.setVisibility(View.GONE);
         }
+
     }
 
     /**
@@ -115,10 +118,20 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
         }
         this.mContentView.setVisibility(View.GONE);
 
+        closeRefreshinghOrLoadMore();
+
+    }
+
+    private void closeRefreshinghOrLoadMore() {
+        if (isRefreshing) {
+            this.endRefreshing();
+        } else if (isLoadMore) {
+            this.endLoadingMore();
+        }
     }
 
     /**
-     * Show empty view when had dataSet failed;
+     * Show error view when had dataSet failed;
      */
     public void showErrorView() {
         AbLogUtil.d(TAG, "showErrorView()");
@@ -137,6 +150,31 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
             this.mStatusView.setVisibility(View.VISIBLE);
         }
         this.mContentView.setVisibility(View.GONE);
+
+        closeRefreshinghOrLoadMore();
+    }
+    /**
+     * Show error view when had dataSet failed;
+     */
+    public void showNetWorkErrorView() {
+        AbLogUtil.d(TAG, "showErrorView()");
+        if (this.mStatusView == null) {
+            this.mStatusView = this.mLoadingStatusHelper.getRefreshStatusView();
+            this.addView(this.mStatusView);
+            this.mLoadingStatusHelper.setOnClickListener(new OnClickListener() {
+                public void onClick(View view) {
+                    RefreshLayout2.this.showLoadingView();
+                    RefreshLayout2.this.mDataSource.refreshData();
+                }
+            });
+        }
+        if (isShowStatusLoading) {
+            this.mLoadingStatusHelper.changeToNetWorkError();
+            this.mStatusView.setVisibility(View.VISIBLE);
+        }
+        this.mContentView.setVisibility(View.GONE);
+
+        closeRefreshinghOrLoadMore();
     }
 
     /**
@@ -155,8 +193,8 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
             });
         }
         if (isShowStatusLoading) {
-            this.mLoadingStatusHelper.changeToLoading();
             this.mStatusView.setVisibility(View.VISIBLE);
+            this.mLoadingStatusHelper.changeToLoading();
         }
         this.mContentView.setVisibility(View.GONE);
     }
@@ -175,6 +213,7 @@ public class RefreshLayout2 extends BGARefreshLayout implements BGARefreshLayout
      */
     public void endLoadingMore() {
         AbLogUtil.d(TAG, "endRefreshing()");
+        this.isLoadMore = false;
         super.endLoadingMore();
     }
 }
